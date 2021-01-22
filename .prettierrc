@@ -1,0 +1,9 @@
+{
+  "semi": true,
+  "trailingComma": "all",
+  "singleQuote": true,
+  "printWidth": 100,
+  "code": 100,
+  "ignoreUrls": true,
+  "ignoreStrings": true
+}
