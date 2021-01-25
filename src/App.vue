@@ -18,10 +18,14 @@
       <FooterBreadcrumb />
       <FooterNavigation />
     </footer>
+
+    <!-- <ModalContainer /> -->
+    <portal-target name="modal" />
   </div>
 </template>
 
 <script>
+// import ModalContainer from './components/ModalContainer.vue';
 import Banner from './components/Banner.vue';
 import HeaderTools from './components/HeaderTools.vue';
 import HeaderNavigation from './components/HeaderNavigation.vue';
@@ -34,6 +38,7 @@ import FooterNavigation from './components/FooterNavigation.vue';
 export default {
   name: 'App',
   components: {
+    // ModalContainer,
     Banner,
     HeaderTools,
     HeaderNavigation,

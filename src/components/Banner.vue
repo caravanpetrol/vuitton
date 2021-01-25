@@ -1,13 +1,13 @@
 <template>
-  <div class="lv-banner-handler lv-default-layout__banners">
-    <div class="lv-banner">
-      <div class="lv-banner__content">
+  <div>
+    <div>
+      <div>
         <span>
           Livraison offerte en 2 à 4 jours ouvrés en France et dès ce soir ou demain à Paris et dans
           les Hauts-de-Seine.
         </span>
-        <button aria-label="Fermer" class="lv-banner__close">
-          <svg focusable="false" aria-hidden="true" class="lv-icon">
+        <button aria-label="Fermer">
+          <svg focusable="false" aria-hidden="true">
             <use xlink:href="../assets/images/icons.svg#sprite-controls-close"></use>
           </svg>
         </button>
