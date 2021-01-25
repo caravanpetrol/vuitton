@@ -1,17 +1,17 @@
 <!-- eslint-disable max-len -->
 <template>
-  <div style="position: fixed; top: 0; bottom: 0; right: 0px; left: 0px">
+  <div style="position: fixed; top: 0; bottom: 0; right: 0; left: 0">
     <div
       style="
         position: fixed;
         top: 0;
         bottom: 0;
-        right: 0px;
-        left: 0px;
+        right: 0;
+        left: 0;
         transition-property: opacity;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         transition-duration: 150ms;
-      "
+"
     >
       <div
         style="
@@ -20,15 +20,16 @@
           opacity: 0.75;
           top: 0;
           bottom: 0;
-          right: 0px;
-          left: 0px;
-        "
+          right: 0;
+          left: 0;
+"
       ></div>
     </div>
 
     <div
       style="
         z-index: 10;
+
         --tw-translate-x: 0;
         --tw-translate-y: 0;
         --tw-rotate: 0;
@@ -36,7 +37,9 @@
         --tw-skew-y: 0;
         --tw-scale-x: 1;
         --tw-scale-y: 1;
-        transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y))
+
+        transform:
+          translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y))
           rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
           scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
         transition-property: all;
@@ -44,7 +47,7 @@
         width: 100%;
         background: white;
         transition-duration: 150ms;
-      "
+"
       role="dialog"
       aria-modal="true"
       aria-labelledby="modal-headline"

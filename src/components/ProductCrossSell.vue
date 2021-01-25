@@ -51,7 +51,7 @@
                 </svg>
               </button>
               <div>
-                <ul style="transform: translate3d(0px, 0px, 0px); transition-duration: 0ms">
+                <ul style="transform: translate3d(0, 0, 0); transition-duration: 0ms">
                   <li style="width: 414.333px; margin-right: 8px" aria-hidden="false">
                     <a
                       href="/fra-fr/produits/sneaker-montante-tattoo-nvprod2390088v#1A8AHB"
