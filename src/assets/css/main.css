@@ -2,6 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
+/* 
+  font-light + italic: 300
+  font-normal: 400
+  font-medium: 500
+  font-semibold: 600;
+  font-bold: 700 
+
+  colors: {
+    grey-bokara: '#19110b',
+  },
+
+  screens: {
+    'sm': '640px',
+    // => @media (min-width: 640px) { ... }
+
+    'md': '768px',
+    // => @media (min-width: 768px) { ... }
+
+    'lg': '1024px',
+    // => @media (min-width: 1024px) { ... }
+
+    'xl': '1280px',
+    // => @media (min-width: 1280px) { ... }
+
+    '2xl': '1536px',
+    // => @media (min-width: 1536px) { ... }
+  } 
+*/
+
 @layer base {
   @font-face { font-family: "Louis Vuitton Web"; src: url("../fonts/LouisVuitton-Light.woff2") format("woff2"), url("../fonts/LouisVuitton-Light.woff") format("woff"); font-style: normal; font-weight: 300; font-display: swap; }
 
@@ -12,4 +41,28 @@
   @font-face { font-family: "Louis Vuitton Web"; src: url("../fonts/LouisVuitton-Medium.woff2") format("woff2"), url("../fonts/LouisVuitton-Medium.woff") format("woff"); font-style: normal; font-weight: 500; font-display: swap; }
 
   @font-face { font-family: "Louis Vuitton Web"; src: url("../fonts/LouisVuitton-Bold.woff2") format("woff2"), url("../fonts/LouisVuitton-Bold.woff") format("woff"); font-style: normal; font-weight: 700; font-display: swap; }
+
+  body {
+    @apply font-light leading-8 tracking-wide text-body text-grey-bokara;
+  }
+
+  button {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    color: inherit;
+    letter-spacing: inherit;
+    line-height: inherit;
+    text-transform: inherit;
+  }
+
+  /* *,
+  ::before,
+  ::after {
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: #e5e7eb;
+  } */
+
 }
