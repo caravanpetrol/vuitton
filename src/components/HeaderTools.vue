@@ -3,30 +3,15 @@
   <nav
     aria-label="Utilitaire"
     role="navigation"
-    class="relative flex justify-between h-10 shadow-sm px-navlg"
+    class="relative flex justify-between h-10 shadow-tools px-navsm md:px-navlg"
   >
     <ul class="flex items-center -ml-2 md:hidden">
       <li class="mr-2">
-        <div class="flex items-center justify-center h-full">
-          <div data-lock="" class="h-full">
-            <button
-              id="mobile-menu-toggler"
-              title="Barre de menu"
-              aria-label="Barre de menu"
-              :aria-expanded="String(expanded)"
-              class="tool-icon"
-              @click="toggleMenu"
-            >
-              <span class="icon-burger__bars"><span class="icon-burger__bars"></span></span>
-            </button>
-            <!---->
-          </div>
-          <div tabindex="-1"></div>
-        </div>
+        <IconMenu />
       </li>
     </ul>
-    <ul class="flex items-center">
-      <li class="h-full whitespace-nowrap">
+    <ul class="items-center hidden md:flex">
+      <li class="hidden h-full md:block whitespace-nowrap">
         <a
           href="https://www.louisvuitton.com/dispatch/?noDRP=true"
           title="Pays de livraison : France - Changer de Pays/Région"
@@ -52,7 +37,7 @@
           <span class="ml-2 text-sm font-normal">Besoin d'aide ?</span></a
         >
       </li>
-      <li class="h-full ml-6 whitespace-nowrap">
+      <li class="hidden h-full ml-6 md:block whitespace-nowrap">
         <div class="flex items-center h-full whitespace-nowrap">
           <svg focusable="false" aria-hidden="true" class="w-4 h-4">
             <use xlink:href="../assets/images/icons.svg#sprite-controls-contact"></use>
@@ -60,7 +45,7 @@
           <bdo class="ml-2 text-sm font-normal" dir="ltr">+33 9 77 40 40 77</bdo>
         </div>
       </li>
-      <li class="h-full ml-6 whitespace-nowrap">
+      <li class="hidden h-full ml-6 md:block whitespace-nowrap">
         <a
           href="/fra-fr/magazine/developpement-durable"
           title="Développement Durable"
@@ -70,23 +55,26 @@
         >
       </li>
     </ul>
-    <ul class="flex -mr-4">
-      <li title="Magasins" class="relative flex justify-center h-full whitespace-nowrap">
+    <ul class="flex flex-1 -mr-4 md:flex-none">
+      <li title="Magasins" class="relative justify-center hidden h-full md:flex whitespace-nowrap">
         <a
           href="https://fr.louisvuitton.com/fra-fr/magasins"
           aria-label="Magasins"
-          class="flex items-center justify-center h-full px-4"
+          class="flex items-center justify-center h-full px-2 md:px-4"
           ><svg focusable="false" aria-hidden="true" class="w-4 h-4">
             <use xlink:href="../assets/images/icons.svg#sprite-navigation-geolocalisation"></use>
           </svg>
           <!----></a
         >
       </li>
-      <li title="Wishlist" class="relative flex justify-start h-full whitespace-nowrap">
+      <li
+        title="Wishlist"
+        class="relative flex justify-start flex-grow h-full mr-2 md:flex-grow-0 whitespace-nowrap md:mr-0"
+      >
         <a
           href="https://secure.louisvuitton.com/fra-fr/mylv/wishlist"
           aria-label="Wishlist"
-          class="flex items-center justify-center h-full px-4"
+          class="flex items-center justify-center h-full px-2 md:px-4"
           ><div>
             <svg focusable="false" aria-hidden="true" class="w-4 h-4">
               <use xlink:href="../assets/images/icons.svg#sprite-navigation-wishlist-off"></use>
@@ -95,11 +83,11 @@
           </div></a
         >
       </li>
-      <li title="My LV" class="relative flex justify-center h-full whitespace-nowrap">
+      <li title="My LV" class="relative flex justify-center h-full mr-2 whitespace-nowrap md:mr-0">
         <button
           aria-label="My LV"
           aria-expanded="false"
-          class="flex items-center justify-center h-full px-4"
+          class="flex items-center justify-center h-full px-2 md:px-4"
         >
           <svg focusable="false" aria-hidden="true" class="w-4 h-4">
             <use xlink:href="../assets/images/icons.svg#sprite-navigation-account"></use>
@@ -107,7 +95,10 @@
         </button>
       </li>
       <li title="MON PANIER" class="relative flex justify-center h-full whitespace-nowrap">
-        <div aria-label="MON PANIER" class="flex items-center justify-center h-full px-4 bag-icon">
+        <div
+          aria-label="MON PANIER"
+          class="flex items-center justify-center h-full px-2 md:px-4 bag-icon"
+        >
           <div class="relative inline-flex items-center justify-center whitespace-nowrap">
             <svg focusable="false" aria-hidden="true" class="w-4 h-4">
               <use xlink:href="../assets/images/icons.svg#sprite-navigation-cart"></use>
@@ -125,57 +116,21 @@
 </template>
 
 <script>
+import IconMenu from '@/components/IconMenu.vue';
+
 export default {
+  components: {
+    IconMenu,
+  },
   name: 'HeaderTools',
-  data() {
-    return {
-      expanded: false,
-    };
-  },
-  methods: {
-    toggleMenu() {
-      this.expanded = !this.expanded;
-    },
-  },
 };
 </script>
 <style scoped>
-.icon-burger__bars {
-  @apply relative inline-block w-4 h-4;
-}
-.icon-burger__bars::after,
-.icon-burger__bars::before,
-.icon-burger__bars span::after,
-.icon-burger__bars span::before {
-  left: 50%;
-  transform: translateX(-50%);
-  background: currentColor;
-  transform-origin: 50% 50%;
-  top: 0.0625rem;
-  content: '';
-  display: block;
-  height: 0.125rem;
-  position: absolute;
-  transition: all 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  width: 100%;
-  opacity: 1;
-}
-.tool-icon {
-  @apply flex justify-center items-center h-full px-2 py-0;
-}
-[aria-expanded='true'] .icon-burger__bars::before {
-  transform: translateX(-50%) scale(0);
-  top: 0.4375rem;
-  opacity: 0;
-}
-[aria-expanded='true'] .lv-header-icon-burger__bars span::after {
-  transform: translateX(-50%) rotate(45deg);
-  top: 0.4375rem;
-  opacity: 0;
-}
+/* TODO Add tailwindcss-pseudo-elements
+TailwindCSS Plugin that adds variants of pseudo elements
+(::before, ::after, ::first-letter, etc.). */
 .bag-icon::before {
   @apply left-0 right-0 m-auto absolute block w-6 bottom-0 h-0.5;
   content: '';
-  transition: box-shadow 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 </style>

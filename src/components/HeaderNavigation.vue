@@ -1,5 +1,8 @@
+<!-- eslint-disable max-len -->
 <template>
-  <div class="relative flex items-stretch justify-start shadow-sm h-18">
+  <div
+    class="relative flex items-stretch justify-center md:justify-start h-18 shadow-navigation px-navxs md:px-0"
+  >
     <Logo />
     <HeaderNavigationMain />
     <HeaderNavigationSearch />

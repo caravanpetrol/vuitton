@@ -4,7 +4,7 @@
     aria-label="Principale"
     role="navigation"
     aria-describedby="nav-instructions"
-    class="flex flex-1"
+    class="flex-1 hidden md:flex"
   >
     <div id="nav-instructions" class="sr-only">
       Appuyer sur Entrée pour ouvrir les éléments du menu. Appuyer sur la flèche bas pour se
@@ -12,13 +12,13 @@
       sous-menus.
     </div>
     <ul class="flex pr-6">
-      <li role="presentation" class="flex pr-8">
+      <li role="presentation" class="flex pr-4 lg:pr-8">
         <button
           aria-expanded="false"
           aria-hidden="false"
           tabindex="0"
           type="button"
-          class="header-main-nav__item"
+          class="navigation-item"
         >
           <span>Nouveautés</span>
           <svg focusable="false" aria-hidden="true" class="md:hidden">
@@ -155,13 +155,13 @@
           </div>
         </div>
       </li>
-      <li role="presentation" class="flex pr-8">
+      <li role="presentation" class="flex pr-4 lg:pr-8">
         <button
           aria-expanded="false"
           aria-hidden="false"
           tabindex="0"
           type="button"
-          class="header-main-nav__item"
+          class="navigation-item"
         >
           <span>Femme</span>
           <svg focusable="false" aria-hidden="true" class="md:hidden">
@@ -1067,13 +1067,13 @@
           </div>
         </div>
       </li>
-      <li role="presentation" class="flex pr-8">
+      <li role="presentation" class="flex pr-4 lg:pr-8">
         <button
           aria-expanded="false"
           aria-hidden="false"
           tabindex="0"
           type="button"
-          class="header-main-nav__item shadow-nav-active"
+          class="navigation-item shadow-nav-active"
         >
           <span>Homme</span>
           <svg focusable="false" aria-hidden="true" class="md:hidden">
@@ -2060,13 +2060,13 @@
           </div>
         </div>
       </li>
-      <li role="presentation" class="flex pr-8">
+      <li role="presentation" class="flex pr-4 lg:pr-8">
         <button
           aria-expanded="false"
           aria-hidden="false"
           tabindex="0"
           type="button"
-          class="header-main-nav__item"
+          class="navigation-item"
         >
           <span>Art de vivre</span>
           <svg focusable="false" aria-hidden="true" class="md:hidden">
@@ -2371,7 +2371,7 @@
         </div>
       </li>
       <li role="presentation" class="flex">
-        <a href="/fra-fr/magazine" aria-hidden="false" tabindex="0" class="header-main-nav__item"
+        <a href="/fra-fr/magazine" aria-hidden="false" tabindex="0" class="navigation-item"
           >Magazine</a
         >
       </li>
@@ -2385,8 +2385,4 @@ export default {
 };
 </script>
 <style scoped>
-.header-main-nav__item {
-  @apply text-xsm tracking-wider leading-4 font-medium whitespace-nowrap
-  flex items-center uppercase hover:shadow-nav-item;
-}
 </style>

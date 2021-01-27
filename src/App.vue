@@ -2,7 +2,7 @@
   <div id="app">
     <div>
       <Banner />
-      <header id="header" class="relative shadow-sm">
+      <header id="header" class="relative shadow-header">
         <div>
           <HeaderTools />
           <HeaderNavigation />
