@@ -25,7 +25,7 @@
             <use xlink:href="../assets/images/icons.svg#sprite-controls-chevron-right"></use></svg
         ></a>
       </li>
-      <!---->
+
       <li class="hidden h-full ml-6 whitespace-nowrap lg:block">
         <a
           href="/fra-fr/start-the-journey"
@@ -64,8 +64,7 @@
           ><svg focusable="false" aria-hidden="true" class="w-4 h-4">
             <use xlink:href="../assets/images/icons.svg#sprite-navigation-geolocalisation"></use>
           </svg>
-          <!----></a
-        >
+        </a>
       </li>
       <li
         title="Wishlist"
@@ -78,10 +77,8 @@
           ><div>
             <svg focusable="false" aria-hidden="true" class="w-4 h-4">
               <use xlink:href="../assets/images/icons.svg#sprite-navigation-wishlist-off"></use>
-            </svg>
-            <!---->
-          </div></a
-        >
+            </svg></div
+        ></a>
       </li>
       <li title="My LV" class="relative flex justify-center h-full mr-2 whitespace-nowrap md:mr-0">
         <button

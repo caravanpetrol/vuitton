@@ -9,12 +9,8 @@
             dans les Hauts-de-Seine.
           </center>
         </div>
-        <!---->
       </div>
-      <!---->
     </div>
-    <!---->
-    <!---->
   </div>
 </template>
 

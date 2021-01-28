@@ -30,7 +30,6 @@
         <li>Sneaker montante Tattoo</li>
       </ul>
     </nav>
-    <!---->
   </div>
 </template>
 <script>

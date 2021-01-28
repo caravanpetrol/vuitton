@@ -66,7 +66,6 @@
           </svg>
           <div>
             <strong> Click &amp; Collect </strong>
-            <!---->
           </div>
           <svg focusable="false" aria-hidden="true">
             <use xlink:href="../assets/images/icons.svg#sprite-controls-pop-in-new"></use>
@@ -74,7 +73,6 @@
         </button>
       </li>
     </ul>
-    <!---->
   </div>
 </template>
 <script>

@@ -12,7 +12,16 @@
     </div>
     <h1>Sneaker montante Tattoo</h1>
 
-    <ProductVariations />
+    <div>
+      <button aria-expanded="false">
+        <span> Taille </span>
+        <span> 8 </span>
+        <span class="sr-only">Actuellement sélectionné </span>
+        <svg focusable="false" aria-hidden="true">
+          <use xlink:href="../assets/images/icons.svg#sprite-controls-chevron-right"></use>
+        </svg>
+      </button>
+    </div>
 
     <div>
       <button>
@@ -21,7 +30,6 @@
         </svg>
         <span>Correspondances de taille</span>
       </button>
-      <!---->
     </div>
     <div>
       <div>750,00€</div>
@@ -37,7 +45,6 @@
         </svg>
         <span>Trouver ce produit en magasin</span>
       </button>
-      <!---->
     </div>
     <div>
       <p>
@@ -57,7 +64,6 @@
           <use xlink:href="../assets/images/icons.svg#sprite-controls-chevron-right"></use>
         </svg>
       </button>
-      <!---->
     </div>
 
     <ProductReinsurance />
@@ -65,14 +71,12 @@
 </template>
 
 <script>
-import ProductVariations from '@/components/ProductVariations.vue';
 import ProductPurchase from '@/components/ProductPurchase.vue';
 import ProductFeatures from '@/components/ProductFeatures.vue';
 import ProductReinsurance from '@/components/ProductReinsurance.vue';
 
 export default {
   components: {
-    ProductVariations,
     ProductPurchase,
     ProductFeatures,
     ProductReinsurance,

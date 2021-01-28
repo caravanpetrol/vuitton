@@ -2,9 +2,7 @@
   <div>
     <h2>Détails</h2>
     <div>
-      <!---->
-      <div id="read-more" aria-hidden="false" style="display: none; height: 8.125rem">
-        <!---->
+      <div id="read-more" aria-hidden="false">
         <div>
           <ul>
             <li>Bleu Azur</li>

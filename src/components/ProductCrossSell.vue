@@ -2,10 +2,9 @@
 <template>
   <div>
     <h2><span>A découvrir également</span></h2>
-    <!---->
+
     <div id="tabs0">
       <div>
-        <!---->
         <div>
           <ul id="tablist0" role="tablist">
             <li role="presentation">
@@ -51,8 +50,8 @@
                 </svg>
               </button>
               <div>
-                <ul style="transform: translate3d(0, 0, 0); transition-duration: 0ms">
-                  <li style="width: 414.333px; margin-right: 8px" aria-hidden="false">
+                <ul>
+                  <li aria-hidden="false">
                     <a
                       href="/fra-fr/produits/sneaker-montante-tattoo-nvprod2390088v#1A8AHB"
                       tabindex="0"
@@ -74,12 +73,8 @@
                       </div>
                       <div>
                         <span>Sneaker montante Tattoo</span>
-                        <!---->
-                        <span
-                          ><!---->
-                          750,00€
-                        </span>
-                        <!---->
+
+                        <span> 750,00€ </span>
                       </div>
                       <div>
                         <button
@@ -95,7 +90,7 @@
                         </button></div
                     ></a>
                   </li>
-                  <li style="width: 414.333px; margin-right: 8px" aria-hidden="true">
+                  <li aria-hidden="true">
                     <a
                       href="/fra-fr/produits/chemise-clouds-coupe-standard-nvprod2390038v#1A8ATZ"
                       tabindex="-1"
@@ -117,12 +112,8 @@
                       </div>
                       <div>
                         <span>Chemise Clouds coupe standard</span>
-                        <!---->
-                        <span
-                          ><!---->
-                          750,00€
-                        </span>
-                        <!---->
+
+                        <span> 750,00€ </span>
                       </div>
                       <div>
                         <button
@@ -138,7 +129,7 @@
                         </button></div
                     ></a>
                   </li>
-                  <li style="width: 414.333px; margin-right: 8px" aria-hidden="true">
+                  <li aria-hidden="true">
                     <a href="/fra-fr/produits/bonnet-nm-petit-damier-011323#M70009" tabindex="-1"
                       ><div>
                         <div>
@@ -158,12 +149,8 @@
                       </div>
                       <div>
                         <span>Bonnet NM Petit Damier</span>
-                        <!---->
-                        <span
-                          ><!---->
-                          230,00€
-                        </span>
-                        <!---->
+
+                        <span> 230,00€ </span>
                       </div>
                       <div>
                         <button
