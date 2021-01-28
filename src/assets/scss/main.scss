@@ -1,0 +1,13 @@
+body {
+  font-family: $font-family-base;
+  font-size: $text-base;
+  color: $grey-bokara;
+  font-weight: $font-light;
+  line-height: $leading-8;
+  letter-spacing: $tracking-wide;
+}
+
+
+/* @include mq($from:md, $until: lg) {
+
+} */

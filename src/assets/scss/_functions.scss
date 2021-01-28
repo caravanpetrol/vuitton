@@ -1,0 +1,26 @@
+// ----------------------------------------------------------------------------
+// Functions
+// ----------------------------------------------------------------------------
+
+// calculateRem - Calculates a proper rem value (usually a font-size) given a pixel value.
+/// @param {number} $size - a pixel || verbal attribute: auto, initial, etcetera.
+/// @return {number} a rem value based on a default browser font size of 16px
+/// @alias rem()
+
+@function calculateRem($size) {
+	@if type-of($size)==string or $size==0 or unit($size)=="rem" {
+		@return $size;
+	}
+
+	@if unit($size) !="px" {
+		@error "The calculateRem function expects a pixel || verbal attribute: auto, initial, etcetera.";
+	}
+
+	$remSize: $size / 16px;
+
+	@return $remSize * 1rem;
+}
+
+@function rem($size) {
+	@return calculateRem($size);
+}
