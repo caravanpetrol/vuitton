@@ -6,9 +6,9 @@
     action="https://fr.louisvuitton.com/fra-fr/rechercher/"
     method="post"
   >
-    <div class="relative flex flex-row w-full md:pr-navlg">
-      <div class="absolute top-0 bottom-0 left-0 flex items-center px-4">
-        <svg focusable="false" aria-hidden="true" class="w-4 h-4">
+    <div>
+      <div>
+        <svg focusable="false" aria-hidden="true">
           <use xlink:href="../assets/images/icons.svg#sprite-navigation-search"></use>
         </svg>
       </div>
@@ -18,7 +18,6 @@
       >
       <input
         id="searchHeaderInput"
-        class="flex-auto w-full pr-4 text-base tracking-wide rounded-md bg-clip-padding pl-11 bg-white-floral leading-11 h-11 placeholder-grey-bokara"
         placeholder="produit, magasin..."
         type="search"
         autocomplete="off"

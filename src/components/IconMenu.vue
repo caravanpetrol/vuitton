@@ -1,8 +1,7 @@
 <template>
-  <div class="flex">
+  <div>
     <button
       id="mobile-menu-toggler"
-      class="p-2"
       title="Barre de menu"
       aria-label="Barre de menu"
       :aria-expanded="String(expanded)"
