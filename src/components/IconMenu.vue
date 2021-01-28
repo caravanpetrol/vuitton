@@ -3,15 +3,18 @@
   <div class="flex">
     <button
       id="mobile-menu-toggler"
+      class="p-2"
       title="Barre de menu"
       aria-label="Barre de menu"
       :aria-expanded="String(expanded)"
       @click="toggleMenu"
     >
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
+      <div class="w-4 h-3.5">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </button>
     <!-- <nav
         aria-label="Principale"

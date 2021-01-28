@@ -6,7 +6,7 @@
     class="relative flex justify-between h-10 shadow-tools px-navsm md:px-navlg"
   >
     <ul class="flex items-center -ml-2 md:hidden">
-      <li class="mr-2">
+      <li class="flex h-full mr-2">
         <IconMenu />
       </li>
     </ul>
@@ -95,10 +95,7 @@
         </button>
       </li>
       <li title="MON PANIER" class="relative flex justify-center h-full whitespace-nowrap">
-        <div
-          aria-label="MON PANIER"
-          class="flex items-center justify-center h-full px-2 md:px-4 bag-icon"
-        >
+        <div aria-label="MON PANIER" class="flex items-center justify-center h-full px-2 md:px-4">
           <div class="relative inline-flex items-center justify-center whitespace-nowrap">
             <svg focusable="false" aria-hidden="true" class="w-4 h-4">
               <use xlink:href="../assets/images/icons.svg#sprite-navigation-cart"></use>
@@ -125,12 +122,3 @@ export default {
   name: 'HeaderTools',
 };
 </script>
-<style scoped>
-/* TODO Add tailwindcss-pseudo-elements
-TailwindCSS Plugin that adds variants of pseudo elements
-(::before, ::after, ::first-letter, etc.). */
-.bag-icon::before {
-  @apply left-0 right-0 m-auto absolute block w-6 bottom-0 h-0.5;
-  content: '';
-}
-</style>
