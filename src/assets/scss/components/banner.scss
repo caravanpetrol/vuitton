@@ -1,0 +1,19 @@
+.banner {
+    background-color: $white-floral;
+    font-size: $text-normal;
+}
+.banner__block {
+    position: relative;
+    padding: 1rem 6.4vw;
+    @include mq($from: md) {
+        padding: 0.25rem 3.125vw;
+    }
+    // py-4 px-navsm md:px-navlg md:py-1
+}
+.banner__text {
+    text-align: center;
+    @include mq($from: md) {
+        position: relative;
+    }
+    // font-light text-center md:relative
+}

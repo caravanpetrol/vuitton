@@ -1,0 +1,86 @@
+// ----------------------------------------------------------------------------
+// Utils
+// ----------------------------------------------------------------------------
+.noscroll {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.visually-hidden {
+    position: absolute !important;
+    height: 1px; width: 1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    // Show information on focusable element
+    // for keyboard only user
+    & a:focus,
+    & input:focus,
+    & button:focus,
+    &.a:focus,
+    &.input:focus,
+    &.button:focus {
+        position:static;
+        width:auto; height:auto;
+    }
+}
+
+.hidden {
+    display: none !important;
+}
+
+@each $bp in map-keys($site-breakpoints) {
+    .hidden\@#{$bp} {
+        @include mq($until: $bp) {
+            display: none !important;
+        }
+    }
+}
+
+@each $bp in map-keys($site-breakpoints) {
+    @include mq($bp) {
+        .show--none\@#{$bp}        { display: none !important; }
+        .show--inline\@#{$bp}      { display: inline !important; }
+        .show--inlineblock\@#{$bp} { display: inline-block !important; }
+        .show--block\@#{$bp}       { display: block !important; }
+        .show--table\@#{$bp}       { display: table !important; }
+        .show--table-row\@#{$bp}   { display: table-row !important; }
+        .show--table-cell\@#{$bp}  { display: table-cell !important; }
+        .show--flex\@#{$bp}        { display: flex !important; }
+        .show--inlineflex\@#{$bp}  { display: inline-flex !important; }
+    }
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    clip-path: inset(50%);
+    border: 0;
+}
+
+.sr-only--focusable {
+    &:active,
+    &:focus {
+        position: static;
+        width: auto;
+        height: auto;
+        overflow: visible;
+        clip: auto;
+        white-space: normal;
+        clip-path: none;
+    }
+}

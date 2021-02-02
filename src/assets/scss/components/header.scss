@@ -1,0 +1,291 @@
+  .header {
+    box-shadow: $shadow-header;
+    position: relative;
+    padding: 0;
+  }
+  
+  .header__container {
+    background: white;
+  }
+  
+  .header-tools {
+    // relative flex justify-between h-10 shadow-tools px-navsm md:px-navlg
+    position: relative;
+    padding: 0 6.4vw;
+    height: 3.5rem;
+    display: flex;
+    box-shadow: $shadow-tools;
+    justify-content: space-between;
+    @include mq($from:md) {
+      height: 2.5rem;
+      padding: 0 3.125vw;
+    }
+  }
+
+  .header-tools__group {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0 0 0 -0.5rem;
+  }
+  
+  .header-tools__group-item {
+    margin-right: 0.5rem;
+  }
+
+  .header-tools__lock {
+    @extend .header-tools__tools-item;
+    position: static;
+    &[data-lock] {
+        height: 100%;
+    }
+  }       
+
+  .mobile-menu-toggler {
+    padding: 0.5rem;
+  }
+
+  .mobile-menu-toggler__icon {
+    width: 1rem ;
+    height: 0.875rem;
+  }
+
+  .header-tools__services {
+    // flex items-center -ml-2 md:hidden
+    display: flex;
+    align-items: center;
+    @include mq($until:md) {
+      display: none;
+    }
+  }
+  
+  .header-tools__services-item { 
+    height: 100%;
+    white-space: nowrap;
+    &:not(:first-of-type) {
+      margin-left: 1.5rem;
+    }
+  }
+
+    .tool-icon {
+        padding: 0 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        @include mq($until:md) {
+            padding: 0 0.5rem;
+        }
+    }
+
+  .header-service-help {
+      display: flex;
+      align-items: center;
+      height: 100%;
+    }
+
+    .header-service-help__label {
+        @extend .header-service__label;
+    }
+
+  .header-service-call {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+
+    .header-service__label {
+        margin-left: 0.5rem;
+        font-size: $text-sm;
+        letter-spacing: $tracking-wide;
+        line-height: $leading-5;
+        font-weight: $font-normal;
+        color: inherit;
+    }
+
+    .header-service-call__label {
+        @extend .header-service__label;
+    }
+
+    .header-service-shipping, .header-service-shipping__wrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    .header-service-shipping {
+        height: 100%;
+        justify-content: space-between;
+    }
+
+    .flag {
+        box-sizing: content-box;
+        margin-right: 0.5rem;
+        border: 1px solid $black-haze;
+        height: 0.75rem;
+        width: 1rem;
+    }
+
+    .header-service-shipping__label {
+        @extend .header-service__label;
+        margin-left: 0;
+        &:last-child {
+            margin-left: 0.25rem;
+        }
+    }
+
+    .header-service-sustainability {
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+
+    .header-service-sustainability__label {
+        @extend .header-service__label;
+    }
+
+  .header-tools__tools {
+    display: flex;
+    flex: 1; // flex-grow: 1; flex-shrink: 1; flex-basis: 0%;
+    justify-content: flex-end;
+    align-items: center;
+    @include mq($from:md) {
+      flex: 0 0 auto;
+      margin-right: -1rem;
+    }
+  }
+
+  .header-tools__tools-item {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    white-space: nowrap;
+    &:not(:last-child) {
+        @include mq($until:md) {
+            margin-right: 0.5rem;
+        }
+    }
+    &.-wishlist {
+        @extend .header-tools__tools-item;
+        @include mq($until:md) {
+            flex: 1 0 auto;
+            justify-content: flex-start;
+        }
+    }
+  }
+  
+  .header-tools__group {
+      display: flex;
+      align-items: center;
+      margin-left: -0.5rem;
+      margin-right: 0.5rem;
+      @include mq($from:md) {
+          display: none;
+      }
+  }
+
+  .header-tools__lock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .header-tools__group-item {
+    margin-right: 0.5rem;
+  }
+  
+  
+  .header-navigation {
+    // relative flex items-stretch justify-center md:justify-start h-18 shadow-navigation px-navxs md:px-0
+    position: relative;
+    display: flex;
+    justify-items: stretch;
+    justify-content: center;
+    padding-left: 4.26667vw;
+    padding-right: 4.26667vw;
+    box-shadow: $shadow-navigation;
+    height: 4.5rem;
+    @include mq($from:md) {
+      justify-content: start;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  
+  .logo__wrap {
+    display: block;
+    height: 100%;
+  }
+  .logo svg {
+    width: 100%;
+    height: 100%;
+  }
+  .logo {
+    box-sizing: content-box;
+    flex: 0 0 auto;
+    width: 7.625rem;
+    height: 100%;
+    position: static;
+    margin-right: 1.5rem;
+    padding-left: 3.125vw;
+    transform: none;
+    @include mq($from:lg) {
+        margin-right: 3rem;
+        width: 9.4375rem;
+    }
+    @include mq($until:md) {
+        margin: 0;
+        padding: 0;
+        left: 50%;
+        transform: translate(-50%);
+        position: absolute;
+        top: -3.5rem;
+        height: 3.5rem;
+        width: 7.25rem;
+    }
+  }
+
+.header-main-nav__wrapper {
+    display: flex;
+    flex: 1 0 auto;
+    @include mq($until:md) {
+        display: none;
+    }
+}
+
+.header-main-nav {
+    // flex pr-6
+    display: flex;
+    padding-right: 1.5rem;
+}
+
+.header-main-nav__item {
+    // flex pr-4 lg:pr-8
+    display: flex;
+    padding-right: 1rem;
+    @include mq($from:lg) {
+        padding-right: 2rem;
+    }
+    &:last-child {
+        padding: 0;
+    }
+}
+
+.header-main-nav__item--button {
+    // flex items-center font-medium leading-4 tracking-wider uppercase text-xsm whitespace-nowrap hover:shadow-nav-item
+    display: flex;
+    align-items: center;
+    font-weight: $font-medium;
+    letter-spacing: $tracking-wider;
+    line-height: $leading-4;
+    text-transform: uppercase;
+    font-size: $text-xsm;
+    white-space: nowrap;
+    &:hover {
+        box-shadow: $shadow-nav-item;
+    }
+    &.active {
+        box-shadow: $shadow-nav-active;
+    }
+}

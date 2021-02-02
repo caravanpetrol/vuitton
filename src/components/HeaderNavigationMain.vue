@@ -4,72 +4,76 @@
     aria-label="Principale"
     role="navigation"
     aria-describedby="nav-instructions"
-    class="flex-1 hidden md:flex"
+    class="header-main-nav__wrapper"
   >
     <div id="nav-instructions" class="sr-only">
       Appuyer sur Entrée pour ouvrir les éléments du menu. Appuyer sur la flèche bas pour se
       déplacer dans le menu et appuyer sur la touche tabulation dans le menu pour aller dans les
       sous-menus.
     </div>
-    <ul class="flex pr-6">
-      <li role="presentation" class="flex pr-4 lg:pr-8">
+    <ul class="header-main-nav">
+      <li role="presentation" class="header-main-nav__item">
         <button
           aria-expanded="false"
           aria-hidden="false"
           tabindex="0"
           type="button"
-          class="navigation-item"
+          class="header-main-nav__item--button"
         >
           <span>Nouveautés</span>
-          <svg focusable="false" aria-hidden="true" class="md:hidden">
+          <svg focusable="false" aria-hidden="true" class="hidden">
             <use xlink:href="../assets/images/icons.svg#sprite-controls-chevron-right"></use>
           </svg>
         </button>
       </li>
-      <li role="presentation" class="flex pr-4 lg:pr-8">
+      <li role="presentation" class="header-main-nav__item">
         <button
           aria-expanded="false"
           aria-hidden="false"
           tabindex="0"
           type="button"
-          class="navigation-item"
+          class="header-main-nav__item--button"
         >
           <span>Femme</span>
-          <svg focusable="false" aria-hidden="true" class="md:hidden">
+          <svg focusable="false" aria-hidden="true" class="hidden">
             <use xlink:href="../assets/images/icons.svg#sprite-controls-chevron-right"></use>
           </svg>
         </button>
       </li>
-      <li role="presentation" class="flex pr-4 lg:pr-8">
+      <li role="presentation" class="header-main-nav__item">
         <button
           aria-expanded="false"
           aria-hidden="false"
           tabindex="0"
           type="button"
-          class="navigation-item shadow-nav-active"
+          class="header-main-nav__item--button active"
         >
           <span>Homme</span>
-          <svg focusable="false" aria-hidden="true" class="md:hidden">
+          <svg focusable="false" aria-hidden="true" class="hidden">
             <use xlink:href="../assets/images/icons.svg#sprite-controls-chevron-right"></use>
           </svg>
         </button>
       </li>
-      <li role="presentation" class="flex pr-4 lg:pr-8">
+      <li role="presentation" class="header-main-nav__item">
         <button
           aria-expanded="false"
           aria-hidden="false"
           tabindex="0"
           type="button"
-          class="navigation-item"
+          class="header-main-nav__item--button"
         >
           <span>Art de vivre</span>
-          <svg focusable="false" aria-hidden="true" class="md:hidden">
+          <svg focusable="false" aria-hidden="true" class="hidden">
             <use xlink:href="../assets/images/icons.svg#sprite-controls-chevron-right"></use>
           </svg>
         </button>
       </li>
-      <li role="presentation" class="flex">
-        <a href="/fra-fr/magazine" aria-hidden="false" tabindex="0" class="navigation-item"
+      <li role="presentation" class="header-main-nav__item">
+        <a
+          href="/fra-fr/magazine"
+          aria-hidden="false"
+          tabindex="0"
+          class="header-main-nav__item--button"
           >Magazine</a
         >
       </li>

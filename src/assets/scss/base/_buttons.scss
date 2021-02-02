@@ -1,0 +1,22 @@
+button {
+    background: none;
+    border: none;
+    appearance: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+}
+
+.button--close {
+    // absolute flex items-center justify-center transform top-2 right-2 md:right-0 md:-translate-y-1/2 md:top-1/2
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+    @include mq($from: md) {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }

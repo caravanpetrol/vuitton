@@ -2,14 +2,14 @@
   <div id="app">
     <div>
       <Banner />
-      <header>
-        <div>
+      <header class="header">
+        <div class="header__container">
           <HeaderTools />
           <HeaderNavigation />
         </div>
       </header>
     </div>
-    <div>
+    <!--     <div>
       <ProductImages />
       <ProductDetails />
     </div>
@@ -17,7 +17,7 @@
     <footer role="contentinfo">
       <FooterBreadcrumb />
       <FooterNavigation />
-    </footer>
+    </footer> -->
   </div>
 </template>
 
@@ -25,11 +25,11 @@
 import Banner from './components/Banner.vue';
 import HeaderTools from './components/HeaderTools.vue';
 import HeaderNavigation from './components/HeaderNavigation.vue';
-import ProductImages from './components/ProductImages.vue';
+/* import ProductImages from './components/ProductImages.vue';
 import ProductDetails from './components/ProductDetails.vue';
 import ProductCrossSell from './components/ProductCrossSell.vue';
 import FooterBreadcrumb from './components/FooterBreadcrumb.vue';
-import FooterNavigation from './components/FooterNavigation.vue';
+import FooterNavigation from './components/FooterNavigation.vue'; */
 
 export default {
   name: 'App',
@@ -37,11 +37,11 @@ export default {
     Banner,
     HeaderTools,
     HeaderNavigation,
-    ProductImages,
+    /* ProductImages,
     ProductDetails,
     ProductCrossSell,
     FooterBreadcrumb,
-    FooterNavigation,
+    FooterNavigation, */
   },
 };
 </script>

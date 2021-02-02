@@ -1,0 +1,82 @@
+.icon {
+    width: 1rem;
+    height: 1rem;
+  }
+.icon--small {
+    width: 0.75rem;
+    height: 0.75rem;
+}  
+
+.icon-with-count {
+    position: relative;
+    display: inline-flex;
+    justify-items: center;
+    justify-content: center;
+    white-space: nowrap;
+}
+
+.icon-with-count__count {
+    top: 50%;
+    height: 0.75rem;
+    width: 0.75rem;
+    left: 1rem;
+    margin-top: -0.875rem;
+    background: $cola;
+    border: 0;
+    border-radius: 50%;
+    text-align: center;
+    display: block;
+    position: absolute;
+    line-height: $leading-2;
+    color: white;
+    font-size: $text-xs;
+    font-weight: $font-semibold;
+    letter-spacing: 0;
+}
+
+/* MOBILE MENU ICON */
+
+.mobile-menu-toggler {
+    $bar-thickness: 0.125rem;
+    .mobile-menu-toggler__icon {
+        position: relative;
+        @extend .transition-all, .transform, .rotate-0;
+        span {
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: $bar-thickness;
+            background: $grey-bokara;
+            opacity: 1;
+            left: 0;
+            @extend .transform, .rotate-0, .transition-all;
+            &:nth-child(1) {
+                top: 0;
+            }
+            &:nth-child(2), &:nth-child(3) {
+                top: 50%;
+                @extend .transform, .-translate-y-1\/2;
+            }
+            &:nth-child(4) {
+                bottom: 0;
+            }
+        }
+    }
+    &[aria-expanded='true'] {
+        .mobile-menu-toggler__icon {
+            span {
+                &:nth-child(1), &:nth-child(4) {
+                    width: 0;
+                    top: 50%;
+                    left: 50%;
+                }
+                &:nth-child(2) {
+                    @extend .transform, .-translate-y-1\/2, .rotate-45;
+                }
+                &:nth-child(3) {
+                    @extend .transform, .-translate-y-1\/2, .-rotate-45;
+                }
+            }
+        }
+    }
+}
