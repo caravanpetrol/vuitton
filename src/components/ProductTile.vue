@@ -1,7 +1,13 @@
 <template>
-  <div>
+  <div class="product-visual-module__image">
     <picture>
-      <img :sizes="imageSizes" :alt="imageAlt" :srcset="imageSrcset" :src="imageSrc" />
+      <img
+        class="smart-picture fit-contain"
+        :sizes="imageSizes"
+        :alt="imageAlt"
+        :srcset="imageSrcset"
+        :src="imageSrc"
+      />
     </picture>
   </div>
 </template>

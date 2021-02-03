@@ -1,27 +1,42 @@
 /////////////////
 // BREAKPOINTS //
 /////////////////
+
 $site-breakpoints: (
 xs: 0px,
 md: 768px,
 lg: 1024px );
 
 
+/////////////
+// SPACING //
+/////////////
+
+// Gutter
+$gutter-lg: 6.4vw;
+$gutter-md: 4.26667vw;
+$gutter-sm: 3.125vw;
+
+// Width
+$w-1\/3: 33.33333%;
+$w-2\/3: 66.66667%;
+
+
 ////////////////
 // TYPOGRAPHY //
 ////////////////
 
-// Font-family
+// Font Family
 $font-family-base: 'Louis Vuitton Web', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
 
-// Font-size
+// Font Size
 $text-base: 1.125rem;
 $text-normal: 1rem;
 $text-sm: 0.875rem;
 $text-xsm: 0.8125rem;
 $text-xs: 0.5rem;
 
-// Font-weight
+// Font Weight
 $font-light: 300;
 $font-normal: 400;
 $font-medium: 500;
@@ -50,7 +65,7 @@ $cola: #392d23;
 // EFFECTS //
 /////////////
 
-// Box shadow
+// Box Shadow
 $shadow-header: 0 -1px 0 0 $wild-sand;
 $shadow-tools: 0 1px 0 0 $wild-sand;
 $shadow-navigation: inset $shadow-header;

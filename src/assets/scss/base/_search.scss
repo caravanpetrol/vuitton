@@ -17,7 +17,7 @@
     justify-content: stretch;
     width: 100%;
     @include mq($from:md) {
-        padding-right: 3.125vw;
+        padding-right: $gutter-sm;
     }
 }
 

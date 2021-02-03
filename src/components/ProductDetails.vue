@@ -1,39 +1,48 @@
 <template>
-  <div>
-    <div>
-      <span> 1A8AH5 </span>
+  <div class="product__details">
+    <div class="product__details-head">
+      <span class="product__details-sku"> 1A8AH5 </span>
       <div>
-        <button aria-label="product_page_add_to_wishlist" aria-disabled="false" tabindex="0">
-          <svg focusable="false" aria-hidden="true">
+        <button
+          aria-label="product_page_add_to_wishlist__button"
+          aria-disabled="false"
+          tabindex="0"
+        >
+          <svg focusable="false" aria-hidden="true" class="icon">
             <use xlink:href="../assets/images/icons.svg#sprite-navigation-wishlist-off"></use>
           </svg>
         </button>
       </div>
     </div>
-    <h1>Sneaker montante Tattoo</h1>
+    <h1 class="product__title">Sneaker montante Tattoo</h1>
 
-    <div>
-      <button aria-expanded="false">
-        <span> Taille </span>
-        <span> 8 </span>
+    <div class="product-variations">
+      <button aria-expanded="false" class="product-variation-selector">
+        <span class="variation-selector__title"> Taille </span>
+        <span class="variation-selector__value"> 8 </span>
         <span class="sr-only">Actuellement sélectionné </span>
-        <svg focusable="false" aria-hidden="true">
+        <svg
+          focusable="false"
+          aria-hidden="true"
+          class="product-variation-selector__icon icon--small"
+        >
           <use xlink:href="../assets/images/icons.svg#sprite-controls-chevron-right"></use>
         </svg>
       </button>
     </div>
 
-    <div>
-      <button>
-        <svg focusable="false" aria-hidden="true">
+    <div class="product-size-guide">
+      <button class="product-size-guide__button">
+        <svg focusable="false" aria-hidden="true" class="icon">
           <use xlink:href="../assets/images/icons.svg#sprite-informations-size-guide"></use>
         </svg>
-        <span>Correspondances de taille</span>
+        <span class="product-size-guide__button-text">Correspondances de taille</span>
       </button>
     </div>
-    <div>
-      <div>750,00€</div>
-      <span> Disponible </span>
+
+    <div class="product__price-stock">
+      <div class="product__price">750,00€</div>
+      <span class="product-stock-indicator"> Disponible </span>
     </div>
 
     <ProductPurchase />

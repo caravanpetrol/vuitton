@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <button>Ajouter au panier</button>
+  <div class="product-purchase">
+    <button class="button button--primary button--full">Ajouter au panier</button>
     <div>
       <div>
         <div>

@@ -1,22 +1,68 @@
-button {
-    background: none;
-    border: none;
-    appearance: none;
-    cursor: pointer;
-    padding: 0;
-    margin: 0;
+.button {
+  display: inline-block;
+  font-size: 1rem;
+  letter-spacing: .025rem;
+  font-weight: 400;
+  line-height: 1;
+  padding: 1rem 1.5rem;
+  text-align: center;
+  transition: background-color .25s ease, border-color .25s ease, color .25s ease, box-shadow .25s ease;
+}
+
+.button--primary {
+  color: white;
+  background-color: $grey-bokara;
+  &:hover {
+    color: $grey-bokara;
+    background-color: $wild-sand;
+  }
+}
+
+.button--full {
+  width: 100%;
 }
 
 .button--close {
-    // absolute flex items-center justify-center transform top-2 right-2 md:right-0 md:-translate-y-1/2 md:top-1/2
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    right: 0.5rem;
-    top: 0.5rem;
-    @include mq($from: md) {
-      top: 50%;
-      transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+  @include mq($from: md) {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+  
+
+.icon-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  // cursor: pointer;
+  transition: background-color .3s cubic-bezier(.39,.575,.565,1);
+  &--light {
+    @extend .icon-button;
+    border: rem(1px) solid $wild-sand;
+    background-color: white;
+    &:hover {
+      background-color: #eae8e4;
     }
   }
+}
+
+.product__back-btn {
+  border-left: 0;
+  border-top: 0;
+  position: absolute;
+  top: 0;
+  z-index: 3;
+  width: 3.5rem;
+  height: 3.5rem;
+  @include mq($from:lg) {
+    width: 7.5rem;
+    height: 4.5rem;
+  }
+}

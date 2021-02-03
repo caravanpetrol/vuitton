@@ -4,9 +4,9 @@
 }
 .banner__block {
     position: relative;
-    padding: 1rem 6.4vw;
+    padding: 1rem $gutter-lg;
     @include mq($from: md) {
-        padding: 0.25rem 3.125vw;
+        padding: 0.25rem $gutter-sm;
     }
     // py-4 px-navsm md:px-navlg md:py-1
 }

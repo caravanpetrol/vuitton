@@ -11,14 +11,14 @@
   .header-tools {
     // relative flex justify-between h-10 shadow-tools px-navsm md:px-navlg
     position: relative;
-    padding: 0 6.4vw;
+    padding: 0 $gutter-lg;
     height: 3.5rem;
     display: flex;
     box-shadow: $shadow-tools;
     justify-content: space-between;
     @include mq($from:md) {
       height: 2.5rem;
-      padding: 0 3.125vw;
+      padding: 0 $gutter-sm;
     }
   }
 
@@ -125,7 +125,7 @@
         width: 1rem;
     }
 
-    .header-service-shipping__label {
+    .header-service-shipping__label { 
         @extend .header-service__label;
         margin-left: 0;
         &:last-child {
@@ -202,8 +202,8 @@
     display: flex;
     justify-items: stretch;
     justify-content: center;
-    padding-left: 4.26667vw;
-    padding-right: 4.26667vw;
+    padding-left: $gutter-md;
+    padding-right: $gutter-md;
     box-shadow: $shadow-navigation;
     height: 4.5rem;
     @include mq($from:md) {
@@ -228,7 +228,7 @@
     height: 100%;
     position: static;
     margin-right: 1.5rem;
-    padding-left: 3.125vw;
+    padding-left: $gutter-sm;
     transform: none;
     @include mq($from:lg) {
         margin-right: 3rem;

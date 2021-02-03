@@ -1,15 +1,15 @@
 <template>
-  <div>
+  <div class="product__primary">
     <div>
-      <button aria-label="Retour">
-        <svg focusable="false" aria-hidden="true">
+      <button aria-label="Retour" class="product__back-btn icon-button--light">
+        <svg focusable="false" aria-hidden="true" class="icon">
           <use xlink:href="../assets/images/icons.svg#sprite-controls-back"></use>
         </svg>
       </button>
 
       <div>
-        <ul>
-          <li>
+        <ul class="product-visual-module">
+          <li class="product-visual-module__item--fullwidth">
             <ProductTile
               imageSrcset="https://fr.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-sneaker-montante-tattoo-souliers--BJ9U5PMO25_PM2_Front%20view.png?wid=216&amp;hei=216    216w,
                     https://fr.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-sneaker-montante-tattoo-souliers--BJ9U5PMO25_PM2_Front%20view.png?wid=320&amp;hei=320    320w,
@@ -22,7 +22,7 @@
                   "
             />
           </li>
-          <li>
+          <li class="product-visual-module__item">
             <ProductTile
               imageSrcset="
                     https://fr.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-sneaker-montante-tattoo-souliers--BJ9U5PMO25_PM1_Closeup%20view.png?wid=216&amp;hei=216    216w,
@@ -36,7 +36,7 @@
                   "
             />
           </li>
-          <li>
+          <li class="product-visual-module__item">
             <ProductTile
               imageSrcset="
                     https://fr.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-sneaker-montante-tattoo-souliers--BJ9U5PMO25_PM1_Interior%20view.png?wid=216&amp;hei=216    216w,
@@ -50,7 +50,7 @@
                   "
             />
           </li>
-          <li>
+          <li class="product-visual-module__item">
             <ProductTile
               imageSrcset="
                     https://fr.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-sneaker-montante-tattoo-souliers--BJ9U5PMO25_PM1_Interior2%20view.png?wid=216&amp;hei=216    216w,
@@ -64,7 +64,7 @@
                   "
             />
           </li>
-          <li>
+          <li class="product-visual-module__item">
             <ProductTile
               imageSrcset="
                     https://fr.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-sneaker-montante-tattoo-souliers--BJ9U5PMO25_PM1_Detail%20view.png?wid=216&amp;hei=216    216w,

@@ -2,14 +2,6 @@
   *  INIT STYLES
   */
 
-  * {
-    &,
-    &::before,
-    &::after {
-      box-sizing: border-box;
-    }
-  }
-
   body {
     font-family: $font-family-base;
     font-size: $text-base;
@@ -64,6 +56,14 @@
     text-decoration: none;
   }
 
+  button {
+    background: none;
+    border: none;
+    appearance: none;
+    cursor: pointer;
+    padding: 0;
+  }
+  
     // Delete input outline 
     input:focus{
         outline: none;
