@@ -52,10 +52,32 @@
 }
 
 @layer components {
-  .navigation-item {
-    @apply flex items-center font-medium leading-4 tracking-wider uppercase text-xsm whitespace-nowrap hover:shadow-nav-item;
+  
+  /* ANIMATION */
+  .animate {
+    @apply transition duration-300 ease-sine;
   }
-  /* TODO register component styles in a plugin ? */
+
+  /* BUTTON */
+  .button {
+    @apply inline-block px-6 py-4 text-base font-normal leading-4 tracking-wide text-center;
+  }
+  .button-primary {
+    @apply text-white bg-grey-bokara hover:bg-wild-sand hover:text-grey-bokara;
+  }
+  .button-flex {
+    @apply inline-flex items-center justify-center; 
+  }
+
+  /* ICON */
+  .icon {
+    @apply w-4 h-4;
+  }
+  .icon-sm {
+    @apply w-3 h-3;
+  }
+
+  /* MENU TOGGLER */
   #mobile-menu-toggler div {
     @apply relative transition-all duration-300 transform rotate-0;
   }
@@ -89,5 +111,29 @@
   
   #mobile-menu-toggler[aria-expanded='true'] div span:nth-child(3) {
     @apply transform -rotate-45 -translate-y-1/2;
+  }
+
+  /* NAVIGATION */
+  .navigation-item {
+    @apply flex items-center font-medium leading-4 tracking-wider uppercase text-xsm whitespace-nowrap hover:shadow-nav-item;
+  }
+
+  /* PRODUCT */
+  .product-item {
+    @apply relative mb-2 bg-white-floral w-product-item;
+  }
+  .product-item:first-child .product-item_image {
+    @apply h-vh-xl;
+  }
+  .product-item_image {
+    @apply relative block mx-auto overflow-hidden;
+  }
+  .product-item_image--contain {
+    @apply block object-contain w-full h-full;
+  }
+
+  /* TYPOGRAPHY */
+  .list-label {
+    @apply text-sm font-normal tracking-wide;
   }
 }

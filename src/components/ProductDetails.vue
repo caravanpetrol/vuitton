@@ -1,31 +1,40 @@
+<!-- eslint-disable max-len -->
 <template>
-  <div>
-    <div>
-      <span> 1A8AH5 </span>
+  <div class="w-1/3 pt-12 px-vw-sm pb-vw-sm">
+    <div class="flex items-center justify-end mb-2">
+      <span class="flex-1 text-sm font-medium leading-none tracking-wider"> 1A8AH5 </span>
       <div>
         <button aria-label="product_page_add_to_wishlist" aria-disabled="false" tabindex="0">
-          <svg focusable="false" aria-hidden="true">
+          <svg focusable="false" aria-hidden="true" class="icon">
             <use xlink:href="../assets/images/icons.svg#sprite-navigation-wishlist-off"></use>
           </svg>
         </button>
       </div>
     </div>
-    <h1>Sneaker montante Tattoo</h1>
+    <h1 class="mb-10 font-bold leading-10 tracking-normal uppercase text-title">
+      Sneaker montante Tattoo
+    </h1>
 
     <ProductVariations />
 
-    <div>
-      <button>
-        <svg focusable="false" aria-hidden="true">
+    <div class="text-right">
+      <button class="py-4 pl-6 button-flex">
+        <svg focusable="false" aria-hidden="true" class="icon">
           <use xlink:href="../assets/images/icons.svg#sprite-informations-size-guide"></use>
         </svg>
-        <span>Correspondances de taille</span>
+        <span
+          class="ml-2 text-base font-normal leading-5 tracking-wide animate shadow-underline hover:text-grey-bokara hover:text-opacity-60"
+          >Correspondances de taille</span
+        >
       </button>
       <!---->
     </div>
-    <div>
-      <div>750,00€</div>
-      <span> Disponible </span>
+    <div class="flex items-center pt-10">
+      <div class="flex-auto text-lg font-bold leading-5 tracking-normal">750,00€</div>
+      <span aria-hidden="true" class="flex-auto block px-2 text-3xl text-right text-green-600"
+        >•</span
+      >
+      <span class="list-label"> Disponible </span>
     </div>
 
     <ProductPurchase />

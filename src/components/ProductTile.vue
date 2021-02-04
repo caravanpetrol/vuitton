@@ -1,7 +1,13 @@
 <template>
-  <div>
+  <div class="product-item_image">
     <picture>
-      <img :sizes="imageSizes" :alt="imageAlt" :srcset="imageSrcset" :src="imageSrc" />
+      <img
+        class="product-item_image--contain"
+        :sizes="imageSizes"
+        :alt="imageAlt"
+        :srcset="imageSrcset"
+        :src="imageSrc"
+      />
     </picture>
   </div>
 </template>

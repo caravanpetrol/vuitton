@@ -1,7 +1,7 @@
 <!-- eslint-disable max-len -->
 <template>
   <div
-    class="relative flex items-stretch justify-center md:justify-start h-18 shadow-navigation px-navxs md:px-0"
+    class="relative flex items-stretch justify-center md:justify-start h-18 shadow-navigation px-vw-md md:px-0"
   >
     <Logo />
     <HeaderNavigationMain />

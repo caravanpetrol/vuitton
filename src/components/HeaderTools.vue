@@ -3,7 +3,7 @@
   <nav
     aria-label="Utilitaire"
     role="navigation"
-    class="relative flex justify-between h-10 shadow-tools px-navsm md:px-navlg"
+    class="relative flex justify-between h-10 shadow-tools px-vw-lg md:px-vw-sm"
   >
     <ul class="flex items-center -ml-2 md:hidden">
       <li class="flex h-full mr-2">
@@ -21,7 +21,7 @@
             <span class="text-sm font-normal">Pays de livraison : </span
             ><span class="text-sm font-normal">France</span>
           </div>
-          <svg focusable="false" aria-hidden="true" class="w-3 h-3 md:hidden">
+          <svg focusable="false" aria-hidden="true" class="icon-sm md:hidden">
             <use xlink:href="../assets/images/icons.svg#sprite-controls-chevron-right"></use></svg
         ></a>
       </li>
@@ -31,7 +31,7 @@
           href="/fra-fr/start-the-journey"
           title="Service Clients"
           class="flex items-center h-full whitespace-nowrap"
-          ><svg focusable="false" aria-hidden="true" class="w-4 h-4">
+          ><svg focusable="false" aria-hidden="true" class="icon">
             <use xlink:href="../assets/images/icons.svg#sprite-navigation-help"></use>
           </svg>
           <span class="ml-2 text-sm font-normal">Besoin d'aide ?</span></a
@@ -39,7 +39,7 @@
       </li>
       <li class="hidden h-full ml-6 md:block whitespace-nowrap">
         <div class="flex items-center h-full whitespace-nowrap">
-          <svg focusable="false" aria-hidden="true" class="w-4 h-4">
+          <svg focusable="false" aria-hidden="true" class="icon">
             <use xlink:href="../assets/images/icons.svg#sprite-controls-contact"></use>
           </svg>
           <bdo class="ml-2 text-sm font-normal" dir="ltr">+33 9 77 40 40 77</bdo>
@@ -61,7 +61,7 @@
           href="https://fr.louisvuitton.com/fra-fr/magasins"
           aria-label="Magasins"
           class="flex items-center justify-center h-full px-2 md:px-4"
-          ><svg focusable="false" aria-hidden="true" class="w-4 h-4">
+          ><svg focusable="false" aria-hidden="true" class="icon">
             <use xlink:href="../assets/images/icons.svg#sprite-navigation-geolocalisation"></use>
           </svg>
           <!----></a
@@ -76,7 +76,7 @@
           aria-label="Wishlist"
           class="flex items-center justify-center h-full px-2 md:px-4"
           ><div>
-            <svg focusable="false" aria-hidden="true" class="w-4 h-4">
+            <svg focusable="false" aria-hidden="true" class="icon">
               <use xlink:href="../assets/images/icons.svg#sprite-navigation-wishlist-off"></use>
             </svg>
             <!---->
@@ -89,7 +89,7 @@
           aria-expanded="false"
           class="flex items-center justify-center h-full px-2 md:px-4"
         >
-          <svg focusable="false" aria-hidden="true" class="w-4 h-4">
+          <svg focusable="false" aria-hidden="true" class="icon">
             <use xlink:href="../assets/images/icons.svg#sprite-navigation-account"></use>
           </svg>
         </button>
@@ -97,7 +97,7 @@
       <li title="MON PANIER" class="relative flex justify-center h-full whitespace-nowrap">
         <div aria-label="MON PANIER" class="flex items-center justify-center h-full px-2 md:px-4">
           <div class="relative inline-flex items-center justify-center whitespace-nowrap">
-            <svg focusable="false" aria-hidden="true" class="w-4 h-4">
+            <svg focusable="false" aria-hidden="true" class="icon">
               <use xlink:href="../assets/images/icons.svg#sprite-navigation-cart"></use>
             </svg>
             <span

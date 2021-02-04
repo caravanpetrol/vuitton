@@ -1,110 +1,21 @@
+<!-- eslint-disable max-len -->
 <template>
   <div>
-    <!-- <button aria-expanded="false">
-      <span> Taille </span>
-      <span> 8 </span>
+    <button
+      aria-expanded="false"
+      class="flex items-center justify-between w-full text-base font-normal leading-5 tracking-wide border-t border-b border-wild-sand h-18"
+    >
+      <span class="mr-4 font-medium"> Taille </span>
+      <span class="flex-1 text-right"> 8 </span>
       <span class="sr-only">Actuellement sélectionné </span>
-      <svg focusable="false" aria-hidden="true">
+      <svg focusable="false" aria-hidden="true" class="ml-4 icon-sm">
         <use xlink:href="../assets/images/icons.svg#sprite-controls-chevron-right"></use>
       </svg>
-    </button> -->
-    <ModalContentProductSizes />
-    <!-- <div class="hidden">
-      <div is-selectable="true">
-        <ul>
-          <li>
-            <div role="button" aria-pressed="false" tabindex="0">
-              <span>5</span>
-              <span> Indisponible </span>
-
-            </div>
-          </li>
-          <li>
-            <div role="button" aria-pressed="false" tabindex="0">
-              <span>6</span>
-
-            </div>
-          </li>
-          <li>
-            <div role="button" aria-pressed="false" tabindex="0">
-              <span>6.5</span>
-
-            </div>
-          </li>
-          <li>
-            <div role="button" aria-pressed="false" tabindex="0">
-              <span>7</span>
-
-            </div>
-          </li>
-          <li>
-            <div role="button" aria-pressed="false" tabindex="0">
-              <span>7.5</span>
-              <span> Indisponible </span>
-
-            </div>
-          </li>
-          <li>
-            <div
-              role="button"
-              aria-pressed="true"
-              aria-label="8 - Disponible - Actuellement sélectionné
-"
-              tabindex="0"
-            >
-              <span>8</span>
-
-              <svg focusable="false" aria-hidden="true">
-                <use xlink:href="../assets/images/icons.svg#sprite-controls-valid"></use>
-              </svg>
-            </div>
-          </li>
-          <li>
-            <div role="button" aria-pressed="false" tabindex="0">
-              <span>8.5</span>
-              <span> Indisponible </span>
-
-            </div>
-          </li>
-          <li>
-            <div role="button" aria-pressed="false" tabindex="0">
-              <span>9</span>
-              <span> Indisponible </span>
-
-            </div>
-          </li>
-          <li>
-            <div role="button" aria-pressed="false" tabindex="0">
-              <span>10</span>
-              <span> Indisponible </span>
-
-            </div>
-          </li>
-          <li>
-            <div role="button" aria-pressed="false" tabindex="0">
-              <span>11</span>
-
-            </div>
-          </li>
-          <li>
-            <div role="button" aria-pressed="false" tabindex="0">
-              <span>12</span>
-              <span> Indisponible </span>
-
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div> -->
+    </button>
   </div>
 </template>
 <script>
-import ModalContentProductSizes from '@/components/ModalContentProductSizes.vue';
-
 export default {
   name: 'ProductVariations',
-  components: {
-    ModalContentProductSizes,
-  },
 };
 </script>

@@ -6,9 +6,9 @@
     action="https://fr.louisvuitton.com/fra-fr/rechercher/"
     method="post"
   >
-    <div class="relative flex flex-row w-full md:pr-navlg">
+    <div class="relative flex flex-row w-full md:pr-vw-sm">
       <div class="absolute top-0 bottom-0 left-0 flex items-center px-4">
-        <svg focusable="false" aria-hidden="true" class="w-4 h-4">
+        <svg focusable="false" aria-hidden="true" class="icon">
           <use xlink:href="../assets/images/icons.svg#sprite-navigation-search"></use>
         </svg>
       </div>

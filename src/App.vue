@@ -9,10 +9,10 @@
         </div>
       </header>
     </div>
-    <!-- <div>
+    <div class="flex flex-wrap border-b border-wild-sand">
       <ProductImages />
       <ProductDetails />
-    </div> -->
+    </div>
     <!-- <ProductCrossSell /> -->
     <!-- <footer role="contentinfo">
       <FooterBreadcrumb />
@@ -26,8 +26,8 @@
 import Banner from './components/Banner.vue';
 import HeaderTools from './components/HeaderTools.vue';
 import HeaderNavigation from './components/HeaderNavigation.vue';
-// import ProductImages from './components/ProductImages.vue';
-// import ProductDetails from './components/ProductDetails.vue';
+import ProductImages from './components/ProductImages.vue';
+import ProductDetails from './components/ProductDetails.vue';
 // import ProductCrossSell from './components/ProductCrossSell.vue';
 // import FooterBreadcrumb from './components/FooterBreadcrumb.vue';
 // import FooterNavigation from './components/FooterNavigation.vue';
@@ -39,8 +39,8 @@ export default {
     Banner,
     HeaderTools,
     HeaderNavigation,
-    // ProductImages,
-    // ProductDetails,
+    ProductImages,
+    ProductDetails,
     // ProductCrossSell,
     // FooterBreadcrumb,
     // FooterNavigation,

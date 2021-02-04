@@ -1,6 +1,6 @@
 <!-- eslint-disable max-len -->
 <template>
-  <div class="absolute flex-none h-full mr-6 -top-14 md:static lg:mr-12 pl-navlg w-38 lg:w-50">
+  <div class="absolute flex-none h-full mr-6 -top-14 md:static lg:mr-12 pl-vw-sm w-38 lg:w-50">
     <a href="/fra-fr/homepage" aria-label="LOUIS VUITTON Site Officiel France" class="block h-full"
       ><svg
         class="w-full h-full"
