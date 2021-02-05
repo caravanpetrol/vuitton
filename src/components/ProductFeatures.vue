@@ -1,8 +1,12 @@
 <template>
-  <div>
-    <h2>Détails</h2>
-    <div>
-      <div id="read-more" aria-hidden="false">
+  <div class="product-features">
+    <h2 class="list-label-xl">Détails</h2>
+    <div class="expandable-panel">
+      <div
+        id="read-more"
+        aria-hidden="false"
+        :class="[expanded ? 'expanded' : 'minimal', 'expandable-panel__content']"
+      >
         <div>
           <ul>
             <li>Bleu Azur</li>
@@ -14,7 +18,14 @@
           </ul>
         </div>
       </div>
-      <button aria-controls="read-more" aria-expanded="false">Voir plus</button>
+      <button
+        @click="expanded = !expanded"
+        aria-controls="read-more"
+        :aria-expanded="String(expanded)"
+        class="expandable-panel__button"
+      >
+        Voir plus
+      </button>
     </div>
   </div>
 </template>
@@ -22,5 +33,10 @@
 <script>
 export default {
   name: 'ProductFeatures',
+  data() {
+    return {
+      expanded: false,
+    };
+  },
 };
 </script>

@@ -22,7 +22,7 @@
             <span class="header-service-shipping__label">Pays de livraison : </span
             ><span class="header-service-shipping__label"> France</span>
           </div>
-          <svg focusable="false" aria-hidden="true" class="hidden icon icon--small">
+          <svg focusable="false" aria-hidden="true" class="hidden icon icon--sm">
             <use xlink:href="../assets/images/icons.svg#sprite-controls-chevron-right"></use></svg
         ></a>
       </li>

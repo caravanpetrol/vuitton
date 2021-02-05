@@ -17,15 +17,11 @@
     <h1 class="product__title">Sneaker montante Tattoo</h1>
 
     <div class="product-variations">
-      <button aria-expanded="false" class="product-variation-selector">
-        <span class="variation-selector__title"> Taille </span>
-        <span class="variation-selector__value"> 8 </span>
+      <button aria-expanded="false" class="button-selector">
+        <span class="button-selector__title"> Taille </span>
+        <span class="button-selector__value"> 8 </span>
         <span class="sr-only">Actuellement sélectionné </span>
-        <svg
-          focusable="false"
-          aria-hidden="true"
-          class="product-variation-selector__icon icon--small"
-        >
+        <svg focusable="false" aria-hidden="true" class="button-selector__icon icon--sm">
           <use xlink:href="../assets/images/icons.svg#sprite-controls-chevron-right"></use>
         </svg>
       </button>
@@ -48,14 +44,14 @@
     <ProductPurchase />
 
     <div>
-      <button>
-        <svg focusable="false" aria-hidden="true">
+      <button class="product-locate-in-store">
+        <svg focusable="false" aria-hidden="true" class="icon">
           <use xlink:href="../assets/images/icons.svg#sprite-navigation-geolocalisation"></use>
         </svg>
         <span>Trouver ce produit en magasin</span>
       </button>
     </div>
-    <div>
+    <div class="product-description">
       <p>
         Cette sneaker montante Tattoo s'habille de toile Monogram Clouds bleue, l'un des éléments
         phares du défilé Automne-Hiver 2020 de Louis Vuitton. Ce soulier se distingue par sa
@@ -66,10 +62,10 @@
 
     <ProductFeatures />
 
-    <div>
-      <button>
-        <span>Matières et entretien</span>
-        <svg focusable="false" aria-hidden="true">
+    <div class="product-care">
+      <button class="button-selector">
+        <span class="button-selector__title">Matières et entretien</span>
+        <svg focusable="false" aria-hidden="true" class="button-selector__icon icon--sm">
           <use xlink:href="../assets/images/icons.svg#sprite-controls-chevron-right"></use>
         </svg>
       </button>

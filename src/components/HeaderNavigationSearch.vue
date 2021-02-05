@@ -8,7 +8,7 @@
   >
     <div class="search-input">
       <div class="search-input__placeholder-icon">
-        <svg focusable="false" aria-hidden="true" class="icon icon--small">
+        <svg focusable="false" aria-hidden="true" class="icon icon--sm">
           <use xlink:href="../assets/images/icons.svg#sprite-navigation-search"></use>
         </svg>
       </div>

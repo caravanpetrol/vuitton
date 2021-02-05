@@ -58,11 +58,16 @@
 
 
 // PRODUCT DETAILS
-%list-label-m {
-    font-size: .875rem;
-    letter-spacing: .025rem;
-    line-height: 1.25rem;
-    font-weight: 400;
+.list-label-m {
+    font-size: $text-sm;
+    letter-spacing: $tracking-wide;
+    line-height: $leading-5;
+    font-weight: $font-normal;
+}
+
+.list-label-xl {
+    @extend .list-label-m;
+    font-size: $text-base;
 }
 
 .product__details {
@@ -98,65 +103,26 @@
 }
 
 
-
-
 .product__title {
-    font-size: 2.375rem;
-    letter-spacing: 0;
-    line-height: 2.5rem;
-    color: inherit;
-    font-weight: 700;
+    font-size: $text-xl;
+    letter-spacing: $tracking-none;
+    line-height: $leading-10;
+    font-weight: $font-bold;
     text-transform: uppercase;
-    margin: 0 0 2.5rem;
-}
-
-.product-variations {
-    .product-variation-selector {
-        border-top: 1px solid $wild-sand;
-        border-bottom: 1px solid $wild-sand;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 4.5rem;
-        width: 100%;
-        font-size: 1rem;
-        letter-spacing: .025rem;
-        line-height: 1.25rem;
-        font-weight: 400;
-        .variation-selector__title {
-            margin-right: 1rem;
-            font-weight: 500;
-        }
-        .variation-selector__value {
-            flex: 1;
-            text-align: right;
-        }
-        .product-variation-selector__icon {
-            margin-left: 1rem;
-        }
-    }
+    margin-bottom: 2.5rem;
 }
 
 .product-size-guide {
     text-align: right;
+    padding: 1rem 0 1rem 1.5rem;
     .product-size-guide__button {
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
-        padding: 1rem 0 1rem 1.5rem;
-
+        @extend .icon-button;
         .product-size-guide__button-text {
-            box-shadow: 0 1px 0;
-            cursor: pointer;
+            @extend .button;
+            padding: initial;
+            box-shadow: $shadow-underline;
             margin-left: 0.5rem;
-            font-size: 1rem;
-            letter-spacing: .025rem;
-            line-height: 1.25rem;
-            font-weight: 400;
-            color: inherit;
-            text-decoration: none;
-            color: #19110b;
-            transition: color .3s cubic-bezier(.39,.575,.565,1);
+            color: $grey-bokara;
             &:hover {
                 color: rgba(25,17,11,.6);
             }
@@ -169,25 +135,24 @@
     padding-top: 2.5rem;
     display: flex;
     .product__price {
-        font-size: 1.125rem;
-        letter-spacing: 0;
-        line-height: 1.25rem;
-        font-weight: 700;
-        color: inherit;
+        font-size: $text-base;
+        letter-spacing: $tracking-none;
+        line-height: $leading-5;
+        font-weight: $font-bold;
         flex: 1 1 auto;
     }
     .product-stock-indicator {
-        @extend %list-label-m;
+        @extend .list-label-m;
         flex: 1 1 auto;
         text-align: right;
         &::before {
-            background: #5c7e08;
-            border-radius: .5rem;
-            margin-right: 0.5rem;
             content: "";
             display: inline-block;
             width: 0.5rem;
             height: 0.5rem;
+            background: $success;
+            border-radius: 0.5rem;
+            margin-right: 0.5rem;
         }
     }
 }
@@ -197,26 +162,70 @@
 }
 
 .product-purchase__description {
-    @extend %list-label-m;
+    @extend .list-label-m;
     margin-top: 1.5rem;
 }
 
 .product-locate-in-store {
-
+    @extend .button, .button--secondary, .icon-button, .button--full;
+    .icon {
+        margin-right: 0.5rem;
+    }
 }
 
 .product-description {
-
+    padding-top: 2.5rem;
 }
 
 .product-features {
-
+    padding-top: 2.5rem;
+    .list-label-xl {
+        margin-top: 0.938rem;
+        margin-bottom: 0.938rem;
+    }
+    ul li {
+        list-style: disc inside;
+    }
 }
 
-.product-care .lv-product__care {
-
+.product-care {
+    padding-top: 2.5rem;
 }
 
-.product-reinsurance .product__reinsurance {
-
+.product-reinsurance {
+    margin-top: 2.5rem;
+}
+.product-reinsurance__item {
+    display: flex;
+    align-items: center;
+    min-height: 6.875rem;
+    &:not(:last-child) {
+        border-bottom: 1px solid $wild-sand;
+    }
+}
+.product-reinsurance__button {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.product-reinsurance__group {
+    flex: 1;
+    text-align: left;
+    height: 100%;
+    margin-right: 2.5rem;
+}
+.product-reinsurance__icon {
+    margin-right: 1.5rem;
+}
+.product-reinsurance__title {
+    @extend .list-label-xl;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    font-weight: $font-medium;
+}
+.product-reinsurance__text {
+    @extend .list-label-m;
+    font-weight: $font-light;
 }

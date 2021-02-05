@@ -1,12 +1,12 @@
 .button {
   display: inline-block;
-  font-size: 1rem;
-  letter-spacing: .025rem;
-  font-weight: 400;
-  line-height: 1;
+  font-size: $text-normal;
+  letter-spacing: $tracking-wide;
+  font-weight: $font-normal;
+  line-height: $leading-4;
   padding: 1rem 1.5rem;
   text-align: center;
-  transition: background-color .25s ease, border-color .25s ease, color .25s ease, box-shadow .25s ease;
+  @extend .transition-all;
 }
 
 .button--primary {
@@ -18,8 +18,46 @@
   }
 }
 
+.button--secondary {
+  box-shadow: $shadow-button;
+  background-color: white;
+  &:hover {
+    background-color: $wild-sand;
+    box-shadow: $shadow-button-hover;
+  }
+}
+
 .button--full {
   width: 100%;
+}
+
+.button-selector {
+  border-top: 1px solid $wild-sand;
+  border-bottom: 1px solid $wild-sand;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4.5rem;
+  width: 100%;
+  font-size: $text-normal;
+  letter-spacing: $tracking-wide;
+  line-height: $leading-5;
+  font-weight: $font-normal;
+  .button-selector__group {
+    display: flex;
+    flex-direction: column;
+  }
+  .button-selector__title {
+    margin-right: 1rem;
+    font-weight: $font-medium;
+  }
+  .button-selector__value {
+      flex: 1;
+      text-align: right;
+  }
+  .button-selector__icon {
+      margin-left: 1rem;
+  }
 }
 
 .button--close {
@@ -34,15 +72,13 @@
     transform: translateY(-50%);
   }
 }
-  
 
 .icon-button {
   display: inline-flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  // cursor: pointer;
-  transition: background-color .3s cubic-bezier(.39,.575,.565,1);
+  @extend .transition-all;
   &--light {
     @extend .icon-button;
     border: rem(1px) solid $wild-sand;
