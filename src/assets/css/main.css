@@ -2,35 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* 
-  font-light + italic: 300
-  font-normal: 400
-  font-medium: 500
-  font-semibold: 600;
-  font-bold: 700 
-
-  colors: {
-    grey-bokara: '#19110b',
-  },
-
-  screens: {
-    'sm': '640px',
-    // => @media (min-width: 640px) { ... }
-
-    'md': '768px',
-    // => @media (min-width: 768px) { ... }
-
-    'lg': '1024px',
-    // => @media (min-width: 1024px) { ... }
-
-    'xl': '1280px',
-    // => @media (min-width: 1280px) { ... }
-
-    '2xl': '1536px',
-    // => @media (min-width: 1536px) { ... }
-  } 
-*/
-
 @layer base {
   @font-face { font-family: "Louis Vuitton Web"; src: url("../fonts/LouisVuitton-Light.woff2") format("woff2"), url("../fonts/LouisVuitton-Light.woff") format("woff"); font-style: normal; font-weight: 300; font-display: swap; }
 
@@ -55,7 +26,7 @@
   
   /* ANIMATION */
   .animate {
-    @apply transition duration-300 ease-sine;
+    @apply transition-all duration-300 ease-sine;
   }
 
   /* BUTTON */
@@ -65,8 +36,14 @@
   .button-primary {
     @apply text-white bg-grey-bokara hover:bg-wild-sand hover:text-grey-bokara;
   }
+  .button-secondary {
+    @apply bg-white text-grey-bokara hover:bg-wild-sand shadow-button-secondary hover:shadow-button-secondary-hover;
+  }
   .button-flex {
     @apply inline-flex items-center justify-center; 
+  }
+  .button-selector {
+    @apply flex items-center justify-between w-full text-base font-normal leading-5 tracking-wide border-t border-b border-wild-sand h-18;
   }
 
   /* ICON */
@@ -75,6 +52,9 @@
   }
   .icon-sm {
     @apply w-3 h-3;
+  }
+  .icon-lg {
+    @apply w-8 h-8;
   }
 
   /* MENU TOGGLER */

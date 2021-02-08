@@ -22,7 +22,6 @@
 </template>
 
 <script>
-// import ModalContainer from './components/ModalContainer.vue';
 import Banner from './components/Banner.vue';
 import HeaderTools from './components/HeaderTools.vue';
 import HeaderNavigation from './components/HeaderNavigation.vue';
@@ -35,7 +34,6 @@ import ProductDetails from './components/ProductDetails.vue';
 export default {
   name: 'App',
   components: {
-    // ModalContainer,
     Banner,
     HeaderTools,
     HeaderNavigation,

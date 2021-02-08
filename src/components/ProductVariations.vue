@@ -1,10 +1,7 @@
 <!-- eslint-disable max-len -->
 <template>
   <div>
-    <button
-      aria-expanded="false"
-      class="flex items-center justify-between w-full text-base font-normal leading-5 tracking-wide border-t border-b border-wild-sand h-18"
-    >
+    <button aria-expanded="false" class="button-selector">
       <span class="mr-4 font-medium"> Taille </span>
       <span class="flex-1 text-right"> 8 </span>
       <span class="sr-only">Actuellement sélectionné </span>

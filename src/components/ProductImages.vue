@@ -1,6 +1,6 @@
 <!-- eslint-disable max-len -->
 <template>
-  <div class="relative w-2/3">
+  <div class="relative lg:w-2/3">
     <div>
       <button
         aria-label="Retour"

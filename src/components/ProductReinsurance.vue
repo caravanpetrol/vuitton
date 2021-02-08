@@ -1,74 +1,78 @@
 <template>
-  <div>
-    <ul>
-      <li>
-        <button>
-          <svg focusable="false" aria-hidden="true">
+  <div class="mt-10">
+    <ul class="flex flex-wrap justify-between">
+      <li class="product-reinsurance__item">
+        <button class="product-reinsurance__button">
+          <svg focusable="false" aria-hidden="true" class="product-reinsurance__icon icon-lg">
             <use xlink:href="../assets/images/icons.svg#sprite-reinsurance-payment"></use>
           </svg>
-          <div>
-            <strong> Informations sur le paiement </strong>
-            <span>Paiement par carte bancaire ou par Paypal.</span>
+          <div class="product-reinsurance__group">
+            <p class="product-reinsurance__title">Informations sur le paiement</p>
+            <span class="product-reinsurance__text"
+              >Paiement par carte bancaire ou par Paypal.</span
+            >
           </div>
-          <svg focusable="false" aria-hidden="true">
+          <svg focusable="false" aria-hidden="true" class="icon">
             <use xlink:href="../assets/images/icons.svg#sprite-controls-pop-in-new"></use>
           </svg>
         </button>
       </li>
-      <li>
-        <button>
-          <svg focusable="false" aria-hidden="true">
+      <li class="product-reinsurance__item">
+        <button class="product-reinsurance__button">
+          <svg focusable="false" aria-hidden="true" class="product-reinsurance__icon icon-lg">
             <use xlink:href="../assets/images/icons.svg#sprite-reinsurance-delivery"></use>
           </svg>
-          <div>
-            <strong> Informations sur la livraison </strong>
-            <span>Livraison offerte à domicile</span>
+          <div class="product-reinsurance__group">
+            <p class="product-reinsurance__title">Informations sur la livraison</p>
+            <span class="product-reinsurance__text">Livraison offerte à domicile</span>
           </div>
-          <svg focusable="false" aria-hidden="true">
+          <svg focusable="false" aria-hidden="true" class="icon">
             <use xlink:href="../assets/images/icons.svg#sprite-controls-pop-in-new"></use>
           </svg>
         </button>
       </li>
-      <li>
-        <button>
-          <svg focusable="false" aria-hidden="true">
+      <li class="product-reinsurance__item">
+        <button class="product-reinsurance__button">
+          <svg focusable="false" aria-hidden="true" class="product-reinsurance__icon icon-lg">
             <use xlink:href="../assets/images/icons.svg#sprite-reinsurance-returnexchange"></use>
           </svg>
-          <div>
-            <strong> Informations sur les retours </strong>
-            <span>Échanges et retours en ligne</span>
+          <div class="product-reinsurance__group">
+            <p class="product-reinsurance__title">Informations sur les retours</p>
+            <span class="product-reinsurance__text">Échanges et retours en ligne</span>
           </div>
-          <svg focusable="false" aria-hidden="true">
+          <svg focusable="false" aria-hidden="true" class="icon">
             <use xlink:href="../assets/images/icons.svg#sprite-controls-pop-in-new"></use>
           </svg>
         </button>
       </li>
-      <li>
-        <button>
-          <svg focusable="false" aria-hidden="true">
+      <li class="product-reinsurance__item">
+        <button class="product-reinsurance__button">
+          <svg focusable="false" aria-hidden="true" class="product-reinsurance__icon icon-lg">
             <use xlink:href="../assets/images/icons.svg#sprite-reinsurance-packaging"></use>
           </svg>
-          <div>
-            <strong> Emballage cadeau </strong>
-            <span>Emballage contemporain et écologique fidèle à notre héritage d’emballeur.</span>
+          <div class="product-reinsurance__group">
+            <p class="product-reinsurance__title">Emballage cadeau</p>
+            <span class="product-reinsurance__text"
+              >Emballage contemporain et écologique fidèle à notre héritage d’emballeur.</span
+            >
           </div>
-          <svg focusable="false" aria-hidden="true">
+          <svg focusable="false" aria-hidden="true" class="icon">
             <use xlink:href="../assets/images/icons.svg#sprite-controls-pop-in-new"></use>
           </svg>
         </button>
       </li>
-      <li>
-        <button>
-          <svg focusable="false" aria-hidden="true">
+      <li class="product-reinsurance__item">
+        <button class="product-reinsurance__button">
+          <svg focusable="false" aria-hidden="true" class="product-reinsurance__icon icon-lg">
             <use
               xlink:href="../assets/images/icons.svg#sprite-reinsurance-next_day_collect_in_store"
             ></use>
           </svg>
-          <div>
-            <strong> Click &amp; Collect </strong>
+          <div class="product-reinsurance__group">
+            <p class="product-reinsurance__title">Click &amp; Collect</p>
             <!---->
           </div>
-          <svg focusable="false" aria-hidden="true">
+          <svg focusable="false" aria-hidden="true" class="icon">
             <use xlink:href="../assets/images/icons.svg#sprite-controls-pop-in-new"></use>
           </svg>
         </button>
@@ -82,3 +86,26 @@ export default {
   name: 'ProductReinsurance',
 };
 </script>
+<style scoped>
+.product-reinsurance__item {
+  @apply flex flex-grow items-center min-h-27.5;
+}
+.product-reinsurance__item:not(last-child) {
+  @apply border-b border-wild-sand;
+}
+.product-reinsurance__button {
+  @apply h-full flex items-center w-full;
+}
+.product-reinsurance__group {
+  @apply flex-1 text-left mr-10 leading-5;
+}
+.product-reinsurance__icon {
+  @apply mr-6;
+}
+.product-reinsurance__title {
+  @apply font-medium uppercase pb-2;
+}
+.product-reinsurance__text {
+  @apply font-light  text-sm tracking-wide;
+}
+</style>

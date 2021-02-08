@@ -1,6 +1,6 @@
 <!-- eslint-disable max-len -->
 <template>
-  <div class="w-1/3 pt-12 px-vw-sm pb-vw-sm">
+  <div class="pt-12 lg:w-1/3 px-vw-sm pb-vw-sm">
     <div class="flex items-center justify-end mb-2">
       <span class="flex-1 text-sm font-medium leading-none tracking-wider"> 1A8AH5 </span>
       <div>
@@ -40,15 +40,15 @@
     <ProductPurchase />
 
     <div>
-      <button>
-        <svg focusable="false" aria-hidden="true">
+      <button class="w-full button button-flex button-secondary animate">
+        <svg focusable="false" aria-hidden="true" class="mr-2 icon">
           <use xlink:href="../assets/images/icons.svg#sprite-navigation-geolocalisation"></use>
         </svg>
         <span>Trouver ce produit en magasin</span>
       </button>
-      <!---->
     </div>
-    <div>
+
+    <div class="pt-10">
       <p>
         Cette sneaker montante Tattoo s'habille de toile Monogram Clouds bleue, l'un des éléments
         phares du défilé Automne-Hiver 2020 de Louis Vuitton. Ce soulier se distingue par sa
@@ -59,10 +59,10 @@
 
     <ProductFeatures />
 
-    <div>
-      <button>
-        <span>Matières et entretien</span>
-        <svg focusable="false" aria-hidden="true">
+    <div class="mt-10">
+      <button class="button-selector">
+        <span class="font-medium">Matières et entretien</span>
+        <svg focusable="false" aria-hidden="true" class="icon-sm">
           <use xlink:href="../assets/images/icons.svg#sprite-controls-chevron-right"></use>
         </svg>
       </button>
