@@ -1,0 +1,21 @@
+.product-reinsurance__item {
+    @apply flex flex-grow items-center min-h-27.5;
+  }
+  .product-reinsurance__item:not(last-child) {
+    @apply border-b border-wild-sand;
+  }
+  .product-reinsurance__button {
+    @apply flex items-center w-full h-full;
+  }
+  .product-reinsurance__group {
+    @apply flex-1 mr-10 leading-5 text-left;
+  }
+  .product-reinsurance__icon {
+    @apply mr-6;
+  }
+  .product-reinsurance__title {
+    @apply pb-2 font-medium uppercase;
+  }
+  .product-reinsurance__text {
+    @apply text-sm font-light tracking-wide;
+  }

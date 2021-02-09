@@ -70,7 +70,6 @@
           </svg>
           <div class="product-reinsurance__group">
             <p class="product-reinsurance__title">Click &amp; Collect</p>
-            <!---->
           </div>
           <svg focusable="false" aria-hidden="true" class="icon">
             <use xlink:href="../assets/images/icons.svg#sprite-controls-pop-in-new"></use>
@@ -78,7 +77,6 @@
         </button>
       </li>
     </ul>
-    <!---->
   </div>
 </template>
 <script>
@@ -86,26 +84,3 @@ export default {
   name: 'ProductReinsurance',
 };
 </script>
-<style scoped>
-.product-reinsurance__item {
-  @apply flex flex-grow items-center min-h-27.5;
-}
-.product-reinsurance__item:not(last-child) {
-  @apply border-b border-wild-sand;
-}
-.product-reinsurance__button {
-  @apply h-full flex items-center w-full;
-}
-.product-reinsurance__group {
-  @apply flex-1 text-left mr-10 leading-5;
-}
-.product-reinsurance__icon {
-  @apply mr-6;
-}
-.product-reinsurance__title {
-  @apply font-medium uppercase pb-2;
-}
-.product-reinsurance__text {
-  @apply font-light  text-sm tracking-wide;
-}
-</style>

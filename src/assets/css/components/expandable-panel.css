@@ -1,0 +1,21 @@
+
+  .expandable-panel__content {
+    @apply block relative overflow-hidden max-h-32.5 mb-6;
+  }
+  
+  .expandable-panel__content.minimal::after {
+    content: '';
+    @apply absolute bottom-0 left-0 right-0 h-16 transition duration-300 from-white to-transparent bg-gradient-to-t ease-sine;
+  }
+  
+  .expandable-panel__content.expanded {
+    @apply max-h-60;
+  }
+  
+  .expandable-panel__button {
+    @apply text-base font-normal leading-5 tracking-wide shadow-underline;
+  }
+  
+  .expandable-panel__button:hover {
+    @apply text-grey-bokara text-opacity-60;
+  }

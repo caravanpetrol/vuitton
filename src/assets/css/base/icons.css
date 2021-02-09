@@ -1,0 +1,44 @@
+.icon {
+    @apply w-4 h-4;
+  }
+.icon-sm {
+    @apply w-3 h-3;
+}
+.icon-lg {
+    @apply w-8 h-8;
+}
+
+#mobile-menu-toggler div {
+    @apply relative transition-all duration-300 transform rotate-0;
+}
+  
+#mobile-menu-toggler div span {
+    @apply block absolute h-0.5 w-full bg-grey-bokara opacity-100 left-0 transform rotate-0
+    transition-all duration-300;
+}
+  
+  #mobile-menu-toggler div span:nth-child(1) {
+    @apply top-0;
+  }
+  
+  #mobile-menu-toggler div span:nth-child(2),
+  #mobile-menu-toggler div span:nth-child(3) {
+    @apply transform -translate-y-1/2 top-1/2;
+  }
+  
+  #mobile-menu-toggler div span:nth-child(4) {
+    @apply bottom-0;
+  }
+  
+  #mobile-menu-toggler[aria-expanded='true'] div span:nth-child(1),
+  #mobile-menu-toggler[aria-expanded='true'] div span:nth-child(4) {
+    @apply w-0 top-1/2 left-1/2;
+  }
+  
+  #mobile-menu-toggler[aria-expanded='true'] div span:nth-child(2) {
+    @apply transform rotate-45 -translate-y-1/2;
+  }
+  
+  #mobile-menu-toggler[aria-expanded='true'] div span:nth-child(3) {
+    @apply transform -rotate-45 -translate-y-1/2;
+  }

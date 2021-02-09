@@ -3,95 +3,29 @@
 @tailwind utilities;
 
 @layer base {
-  @font-face { font-family: "Louis Vuitton Web"; src: url("../fonts/LouisVuitton-Light.woff2") format("woff2"), url("../fonts/LouisVuitton-Light.woff") format("woff"); font-style: normal; font-weight: 300; font-display: swap; }
-
-  @font-face { font-family: "Louis Vuitton Web"; src: url("../fonts/LouisVuitton-LightOblique.woff2") format("woff2"), url("../fonts/LouisVuitton-LightOblique.woff") format("woff"); font-style: italic; font-weight: 300; font-display: swap; }
-
-  @font-face { font-family: "Louis Vuitton Web"; src: url("../fonts/LouisVuitton-Regular.woff2") format("woff2"), url("../fonts/LouisVuitton-Regular.woff") format("woff"); font-style: normal; font-weight: 400; font-display: swap; }
-
-  @font-face { font-family: "Louis Vuitton Web"; src: url("../fonts/LouisVuitton-Medium.woff2") format("woff2"), url("../fonts/LouisVuitton-Medium.woff") format("woff"); font-style: normal; font-weight: 500; font-display: swap; }
-
-  @font-face { font-family: "Louis Vuitton Web"; src: url("../fonts/LouisVuitton-Bold.woff2") format("woff2"), url("../fonts/LouisVuitton-Bold.woff") format("woff"); font-style: normal; font-weight: 700; font-display: swap; }
+  @import url(base/fonts.css);
 
   body {
     @apply font-light leading-8 tracking-wide text-body text-grey-bokara;
   }
 
-  input::placeholder {
+  @import url(base/forms.css);
+
+  /* input::placeholder {
     @apply italic;
-  }
+  } */
 }
 
 @layer components {
   
   /* ANIMATION */
-  .animate {
-    @apply transition-all duration-300 ease-sine;
-  }
+  @import url(base/animations.css);
 
   /* BUTTON */
-  .button {
-    @apply inline-block px-6 py-4 text-base font-normal leading-4 tracking-wide text-center;
-  }
-  .button-primary {
-    @apply text-white bg-grey-bokara hover:bg-wild-sand hover:text-grey-bokara;
-  }
-  .button-secondary {
-    @apply bg-white text-grey-bokara hover:bg-wild-sand shadow-button-secondary hover:shadow-button-secondary-hover;
-  }
-  .button-flex {
-    @apply inline-flex items-center justify-center; 
-  }
-  .button-selector {
-    @apply flex items-center justify-between w-full text-base font-normal leading-5 tracking-wide border-t border-b border-wild-sand h-18;
-  }
+  @import url(base/buttons.css);
 
   /* ICON */
-  .icon {
-    @apply w-4 h-4;
-  }
-  .icon-sm {
-    @apply w-3 h-3;
-  }
-  .icon-lg {
-    @apply w-8 h-8;
-  }
-
-  /* MENU TOGGLER */
-  #mobile-menu-toggler div {
-    @apply relative transition-all duration-300 transform rotate-0;
-  }
-  
-  #mobile-menu-toggler div span {
-    @apply block absolute h-0.5 w-full bg-grey-bokara opacity-100 left-0 transform rotate-0
-      transition-all duration-300;
-  }
-  
-  #mobile-menu-toggler div span:nth-child(1) {
-    @apply top-0;
-  }
-  
-  #mobile-menu-toggler div span:nth-child(2),
-  #mobile-menu-toggler div span:nth-child(3) {
-    @apply transform -translate-y-1/2 top-1/2;
-  }
-  
-  #mobile-menu-toggler div span:nth-child(4) {
-    @apply bottom-0;
-  }
-  
-  #mobile-menu-toggler[aria-expanded='true'] div span:nth-child(1),
-  #mobile-menu-toggler[aria-expanded='true'] div span:nth-child(4) {
-    @apply w-0 top-1/2 left-1/2;
-  }
-  
-  #mobile-menu-toggler[aria-expanded='true'] div span:nth-child(2) {
-    @apply transform rotate-45 -translate-y-1/2;
-  }
-  
-  #mobile-menu-toggler[aria-expanded='true'] div span:nth-child(3) {
-    @apply transform -rotate-45 -translate-y-1/2;
-  }
+  @import url(base/icons.css);
 
   /* NAVIGATION */
   .navigation-item {
@@ -99,21 +33,14 @@
   }
 
   /* PRODUCT */
-  .product-item {
-    @apply relative mb-2 bg-white-floral w-product-item;
-  }
-  .product-item:first-child .product-item_image {
-    @apply h-vh-xl;
-  }
-  .product-item_image {
-    @apply relative block mx-auto overflow-hidden;
-  }
-  .product-item_image--contain {
-    @apply block object-contain w-full h-full;
-  }
-
+  @import url(components/product.css);
+  @import url(components/product-reinsurance.css);
+  
   /* TYPOGRAPHY */
   .list-label {
     @apply text-sm font-normal tracking-wide;
   }
+
+  /* COMPONENTS */
+  @import url(components/expandable-panel.css);
 }

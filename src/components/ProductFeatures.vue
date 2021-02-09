@@ -39,52 +39,10 @@ export default {
       expanded: false,
     };
   },
-  /*   mounted() {
-    this.matchHeight();
-  }, */
-  /*   methods: {
-    matchHeight() {
-      const height = this.$refs.panel.clientHeight;
-    },
-  }, */
 };
 </script>
 <style scoped>
 li {
   @apply list-disc list-inside;
-}
-
-.expandable-panel__content {
-  @apply block relative overflow-hidden max-h-32.5 mb-6;
-  /* display: block;
-  position: relative;
-  overflow: hidden;
-  max-height: 8.125rem;
-  margin-bottom: 1.5rem;
-  transition: max-height 0.4s linear; */
-}
-.minimal::after {
-  content: '';
-  /* background: linear-gradient(0deg, #fff, hsla(0, 0%, 100%, 0)); */
-  @apply absolute right-0 bottom-0 left-0 h-16 from-white to-transparent
-  bg-gradient-to-t transition duration-300 ease-sine;
-  /*   position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  height: 4rem;
-  content: '';
-  background: linear-gradient(0deg, #fff, hsla(0, 0%, 100%, 0));
-  transition: opacity 0.3s cubic-bezier(0.39, 0.575, 0.565, 1); */
-}
-.expanded {
-  @apply max-h-60;
-}
-
-.expandable-panel__button {
-  @apply shadow-underline text-base leading-5 tracking-wide font-normal;
-}
-.expandable-panel__button:hover {
-  @apply text-grey-bokara text-opacity-60;
 }
 </style>

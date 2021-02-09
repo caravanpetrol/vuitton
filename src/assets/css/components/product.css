@@ -1,0 +1,12 @@
+.product-item {
+    @apply relative mb-2 bg-white-floral w-product-item;
+  }
+  .product-item:first-child .product-item_image {
+    @apply h-vh-xl;
+  }
+  .product-item_image {
+    @apply relative block mx-auto overflow-hidden;
+  }
+  .product-item_image--contain {
+    @apply block object-contain w-full h-full;
+  }

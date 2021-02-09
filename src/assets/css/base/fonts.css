@@ -1,0 +1,9 @@
+@font-face { font-family: "Louis Vuitton Web"; src: url("../../fonts/LouisVuitton-Light.woff2") format("woff2"), url("../../fonts/LouisVuitton-Light.woff") format("woff"); font-style: normal; font-weight: 300; font-display: swap; }
+
+@font-face { font-family: "Louis Vuitton Web"; src: url("../../fonts/LouisVuitton-LightOblique.woff2") format("woff2"), url("../../fonts/LouisVuitton-LightOblique.woff") format("woff"); font-style: italic; font-weight: 300; font-display: swap; }
+
+@font-face { font-family: "Louis Vuitton Web"; src: url("../../fonts/LouisVuitton-Regular.woff2") format("woff2"), url("../../fonts/LouisVuitton-Regular.woff") format("woff"); font-style: normal; font-weight: 400; font-display: swap; }
+
+@font-face { font-family: "Louis Vuitton Web"; src: url("../../fonts/LouisVuitton-Medium.woff2") format("woff2"), url("../../fonts/LouisVuitton-Medium.woff") format("woff"); font-style: normal; font-weight: 500; font-display: swap; }
+
+@font-face { font-family: "Louis Vuitton Web"; src: url("../../fonts/LouisVuitton-Bold.woff2") format("woff2"), url("../../fonts/LouisVuitton-Bold.woff") format("woff"); font-style: normal; font-weight: 700; font-display: swap; }

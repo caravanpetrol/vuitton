@@ -18,7 +18,7 @@
       >
       <input
         id="searchHeaderInput"
-        class="flex-auto w-full pr-4 text-base tracking-wide rounded-md bg-clip-padding pl-11 bg-white-floral leading-11 h-11 placeholder-grey-bokara"
+        class="flex-auto"
         placeholder="produit, magasin..."
         type="search"
         autocomplete="off"

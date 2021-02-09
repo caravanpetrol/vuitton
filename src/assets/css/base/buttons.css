@@ -1,0 +1,15 @@
+.button {
+    @apply inline-block px-6 py-4 text-base font-normal leading-4 tracking-wide text-center;
+  }
+  .button-primary {
+    @apply text-white bg-grey-bokara hover:bg-wild-sand hover:text-grey-bokara;
+  }
+  .button-secondary {
+    @apply bg-white text-grey-bokara hover:bg-wild-sand shadow-button-secondary hover:shadow-button-secondary-hover;
+  }
+  .button-flex {
+    @apply inline-flex items-center justify-center; 
+  }
+  .button-selector {
+    @apply flex items-center justify-between w-full text-base font-normal leading-5 tracking-wide border-t border-b border-wild-sand h-18;
+  }

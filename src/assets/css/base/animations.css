@@ -1,0 +1,3 @@
+.animate {
+    @apply transition-all duration-300 ease-sine;
+  }

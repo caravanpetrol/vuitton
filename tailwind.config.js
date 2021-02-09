@@ -1,6 +1,6 @@
 module.exports = {
   purge: ['./src/**/*.vue', './src/**/*.js'],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: false,
   theme: {
     extend: {
       boxShadow: {
@@ -8,7 +8,7 @@ module.exports = {
         'nav-active': 'inset 0 -2px 0 0 theme("colors.grey-bokara")',
         'nav-item': 'inset 0 -1px 0 0 theme("colors.grey-bokara")',
         navigation: 'inset 0 -1px 0 0 theme("colors.wild-sand")',
-        tools: '0 1px 0 0 theme("colors.wild-sand")', // theme("spacing.px")
+        tools: '0 1px 0 0 theme("colors.wild-sand")',
         underline: '0 1px 0',
         'button-secondary': 'inset 0 0 0 1px theme("colors.grey-bokara")',
         'button-secondary-hover': 'inset 0 0 0 1px theme("colors.wild-sand")',
